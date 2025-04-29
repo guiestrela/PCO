@@ -6,12 +6,14 @@ export const HeaderMainContainer = styled.header`
     height: 185px;
     width: 100%;
     background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const HeaderContainer = styled.div`
     display: flex;
     height: 129px;
-    width: 100%;
+    width: 1440px;
     align-items: center;   
     justify-content: space-between;     
 `;

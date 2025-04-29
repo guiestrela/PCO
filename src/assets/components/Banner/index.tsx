@@ -1,4 +1,6 @@
-import { BannerContainer, BannerImage, BannerTextContainer, Button, ContainerButton, ImageContainer, MainContainer, MainContainerButton, TextContainer } from "./style";
+import { BannerContainer, BannerImage, BannerTextContainer, ImageContainer, MainContainer,  TextContainer } from "./style";
+
+import { Button, ContainerButton } from "../Button/style";
 
 import ImageBanner from "../../images/fotoBanner01.png";
 
@@ -22,28 +24,7 @@ function Banner() {
                     <BannerImage  src={ImageBanner} alt="Banner" />
                 </ImageContainer>                     
             </BannerContainer>              
-        </MainContainer>  
-        <MainContainerButton>
-                <ContainerButton flex={1} paddingleft="80px" justifycontent="flex-start">
-                    <Button borderradius="15px" border="solid 3px #023D69" widthtotal="500px" 
-                    heighttotal="86px" fontsize="22px" 
-                    backgroundColor="transparent" color="#023D69"
-                    
-                    onClick={function (): void {
-                            throw new Error("Function not implemented.");
-                        } }>confira as datas das próximas ações
-                    </Button>
-                </ContainerButton>
-                <ContainerButton flex={1} paddingright="80px" justifycontent="flex-end">
-                    <Button borderradius="15px" border="solid 3px #023D69" widthtotal="500px" 
-                    heighttotal="86px" fontsize="22px"
-                    backgroundColor="transparent" color="#023D69"  
-                    onClick={function (): void {
-                            throw new Error("Function not implemented.");
-                        } }>acompanhe as ações no instagram
-                    </Button>
-                </ContainerButton>
-            </MainContainerButton>                  
+        </MainContainer>                         
         </>
     );
 }
