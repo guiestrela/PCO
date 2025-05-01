@@ -18,9 +18,12 @@ interface ButtonType {
 interface ContainerButtonType {
     flex?: number
     paddingtop?: string
+    paddingbottom?: string
     justifycontent?: string
     paddingleft?: string
     paddingright?: string
+    flexdirection?: string
+    gap?: string
 }
 
 export const ContainerButton = styled.div<ContainerButtonType>`
@@ -30,6 +33,9 @@ export const ContainerButton = styled.div<ContainerButtonType>`
     padding-left: ${props => props.paddingleft ? props.paddingleft : ""}; 
     padding-right: ${props => props.paddingright ? props.paddingright : ""};   
     padding-top: ${props => props.paddingtop ? props.paddingtop : ""};
+    padding-bottom: ${props => props.paddingbottom ? props.paddingbottom : ""};
+    flex-direction: ${props => props.flexdirection ? props.flexdirection : ""};
+    gap: ${props => props.gap ? props.gap : ""};
 `;
 
 export const Button = styled.button<ButtonType>`
@@ -45,5 +51,6 @@ export const Button = styled.button<ButtonType>`
     font-size: ${props => props.fontsize ? props.fontsize : ""};
     color: ${props => props.color ? props.color : ""};
     align-items:${props => props.alignitems ? props.alignitems : ""};
+    
     cursor: pointer;
 `;

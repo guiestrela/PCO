@@ -25,6 +25,15 @@ interface TextInfoType {
     fontweight?: string
 }
 
+interface ImageEnderType {
+    width?: string
+    height?: string
+}
+
+interface ContainerImageType {
+    gap?: string
+}
+
 export const MasterContainerEnter = styled.div`
     display: flex;
     align-items: center;
@@ -39,10 +48,9 @@ export const MainContainerEnter = styled.div<MainContainerEnterType>`
     width: 1440px;
     height: 1661px; 
     align-items: center;
-    background-color: ${ props  => props.backgroundcolor ? props.backgroundcolor : 'transparent'};
-    background-repeat: no-repeat;
-    background-image: url(${({ backgroundimage }) => backgroundimage}) ;
-    background-position-x: 100%;    
+    flex-direction: column;
+    justify-content: center;
+    background-color: ${ props  => props.backgroundcolor ? props.backgroundcolor : 'transparent'};       
 `;
 
 export const TextContainer = styled.div<TextContainerType>`
@@ -74,3 +82,31 @@ export const TextInfo = styled.p<TextInfoType>`
     text-align: center;
 `;
 
+export const MainContainerImage = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;     
+`;
+
+export const ContainerImage = styled.div<ContainerImageType>`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;       
+    gap: ${ props => props.gap ? props.gap : ''};
+`;
+
+export const ImageEnder = styled.img<ImageEnderType>`
+    width: ${props => props.width ? props.width : ''};
+    height: ${props => props.height ? props.height : ''};        
+`;
+
+export const ContainerColumn = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+`
