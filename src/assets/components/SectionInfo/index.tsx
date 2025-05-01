@@ -23,6 +23,7 @@ function SectionInfo() {
                     </ImagePrevContainer>
                 </MainContainerInfo>                
             </MasterContainerInfo>
+            
             <MasterContainerInfo>
                 <MainContainerInfo>
                     <ImageBannerContainer>
@@ -30,6 +31,7 @@ function SectionInfo() {
                     </ImageBannerContainer>                    
                 </MainContainerInfo>
             </MasterContainerInfo>
+
             <MasterContainerInfo>
                 <MainContainerInfo backgroundcolor='#FFF1D6'> 
                     <ImagePrevContainer paddingleft="80px">
