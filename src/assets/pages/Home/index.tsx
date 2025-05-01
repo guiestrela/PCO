@@ -5,7 +5,7 @@ import SectionInfo from "../../components/SectionInfo";
 
 function Home() {
     return (
-        <>
+        <>        
             <Header />  
             <Banner />
             <SectionButton /> 
