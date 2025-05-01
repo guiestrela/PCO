@@ -3,12 +3,15 @@ import styled from "styled-components";
 interface  MainContainerEnterType {
     backgroundimage?: string
     backgroundcolor?: string
-    
+    width?: string
+    height?: string
 }
 
 interface  TextContainerType {
     paddingleft?: string
     paddingright?: string
+    paddingtop?: string
+    alignitems?: string
 }
 
 interface TituloInfoType {
@@ -16,6 +19,7 @@ interface TituloInfoType {
     fontfamily?: string
     fontsize?: string
     fontweight?: string
+    textalign?: string
 }
 
 interface TextInfoType {
@@ -23,6 +27,7 @@ interface TextInfoType {
     fontfamily?: string
     fontsize?: string
     fontweight?: string
+    textalign?: string
 }
 
 interface ImageEnderType {
@@ -34,9 +39,14 @@ interface ContainerImageType {
     gap?: string
 }
 
+interface ContainerColumnType {
+    flexdirection?: string
+}
+
 export const MasterContainerEnter = styled.div`
     display: flex;
     align-items: center;
+    flex-direction: column;
     height: 100%;
     width: 100%;    
     justify-content: center;
@@ -45,21 +55,29 @@ export const MasterContainerEnter = styled.div`
 
 export const MainContainerEnter = styled.div<MainContainerEnterType>`
     display: flex;
-    width: 1440px;
-    height: 1661px; 
+    width: ${ props => props.width ? props.width : '1440px'};
+    height: ${ props => props.height ? props.height : '1661px'}; 
     align-items: center;
     flex-direction: column;
     justify-content: center;
     background-color: ${ props  => props.backgroundcolor ? props.backgroundcolor : 'transparent'};       
 `;
 
+export const ContainerEnter = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1302px;
+    height: 848px;
+    background-color: #FFF1D6;
+`;
+
 export const TextContainer = styled.div<TextContainerType>`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 673px;
+    align-items: ${ props => props.alignitems ? props.alignitems : 'center'};
+    padding-top: ${ props => props.paddingtop ? props.paddingtop : ''};
     padding-left: ${ props => props.paddingleft ? props.paddingleft : ''};
     padding-right: ${ props => props.paddingright ? props.paddingright : ''};
     gap: 20px;
@@ -70,7 +88,7 @@ export const TituloInfo = styled.h1<TituloInfoType>`
     font-size: ${props => props.fontsize ? props.fontsize : '40px'};
     font-weight: ${props => props.fontweight ? props.fontweight : '600'};
     color: ${props => props.color ? props.color : ''};
-    text-align: center;
+    text-align: ${props => props.textalign ? props.textalign : 'center'};
 
 `;
 
@@ -79,7 +97,7 @@ export const TextInfo = styled.p<TextInfoType>`
     font-size: ${props => props.fontsize ? props.fontsize : ''};
     font-weight: ${props => props.fontweight ? props.fontweight : ''};
     color: ${props => props.color ? props.color : ''};
-    text-align: center;
+    text-align: ${props => props.textalign ? props.textalign : 'center'};
 `;
 
 export const MainContainerImage = styled.div`
@@ -102,10 +120,11 @@ export const ImageEnder = styled.img<ImageEnderType>`
     height: ${props => props.height ? props.height : ''};        
 `;
 
-export const ContainerColumn = styled.div`
+export const ContainerColumn = styled.div<ContainerColumnType>`
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;     
+    flex-direction: ${ props => props.flexdirection ? props.flexdirection : ''};   
     width: 100%;
     height: 100%;
     gap: 20px;

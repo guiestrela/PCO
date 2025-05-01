@@ -24,6 +24,7 @@ interface ContainerButtonType {
     paddingright?: string
     flexdirection?: string
     gap?: string
+    alignitems?: string
 }
 
 export const ContainerButton = styled.div<ContainerButtonType>`
@@ -36,6 +37,7 @@ export const ContainerButton = styled.div<ContainerButtonType>`
     padding-bottom: ${props => props.paddingbottom ? props.paddingbottom : ""};
     flex-direction: ${props => props.flexdirection ? props.flexdirection : ""};
     gap: ${props => props.gap ? props.gap : ""};
+    align-items: ${props => props.alignitems ? props.alignitems : ""};
 `;
 
 export const Button = styled.button<ButtonType>`
