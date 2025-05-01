@@ -6,6 +6,11 @@ interface  MainContainerEnterType {
     
 }
 
+interface  TextContainerType {
+    paddingleft?: string
+    paddingright?: string
+}
+
 interface TituloInfoType {
     color?: string
     fontfamily?: string
@@ -40,11 +45,25 @@ export const MainContainerEnter = styled.div<MainContainerEnterType>`
     background-position-x: 100%;    
 `;
 
+export const TextContainer = styled.div<TextContainerType>`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 673px;
+    padding-left: ${ props => props.paddingleft ? props.paddingleft : ''};
+    padding-right: ${ props => props.paddingright ? props.paddingright : ''};
+    gap: 20px;
+`;
+
 export const TituloInfo = styled.h1<TituloInfoType>`
     font-family: 'Poppins', sans-serif;
     font-size: ${props => props.fontsize ? props.fontsize : '40px'};
     font-weight: ${props => props.fontweight ? props.fontweight : '600'};
     color: ${props => props.color ? props.color : ''};
+    text-align: center;
+
 `;
 
 export const TextInfo = styled.p<TextInfoType>`
@@ -52,5 +71,6 @@ export const TextInfo = styled.p<TextInfoType>`
     font-size: ${props => props.fontsize ? props.fontsize : ''};
     font-weight: ${props => props.fontweight ? props.fontweight : ''};
     color: ${props => props.color ? props.color : ''};
+    text-align: center;
 `;
 
