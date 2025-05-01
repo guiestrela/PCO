@@ -3,13 +3,15 @@ import ImgBackCircle from "../../images/Ellipse.png";
 import PrevVideo from "../../images/prevVideo.png";
 import QrCode from "../../images/qr code.svg";
 import MapaDf from "../../images/mapaDf.png";
+import Quantidade from "../../images/quantidades.svg";
+
 
 
 function SectionInfo() {
     return (
         <>
             <MasterContainerInfo>
-                <MainContainerInfo backgroundimage={ImgBackCircle}> 
+                <MainContainerInfo backgroundimage={ImgBackCircle} height="673px"> 
                     <TextContainer paddingleft="80px">
                         <TituloInfo fontsize="68px" fontweight="400" color="#1B2F76">
                             Conheça o Grupo Pão com Ovo
@@ -23,17 +25,17 @@ function SectionInfo() {
                     </ImagePrevContainer>
                 </MainContainerInfo>                
             </MasterContainerInfo>
-            
+
             <MasterContainerInfo>
-                <MainContainerInfo>
+                <MainContainerInfo height="673px">
                     <ImageBannerContainer>
-                        <ImageBanner src={QrCode}/>
+                        <ImageBanner src={QrCode} height='551px' width='1279px'/>
                     </ImageBannerContainer>                    
                 </MainContainerInfo>
             </MasterContainerInfo>
-
+                        
             <MasterContainerInfo>
-                <MainContainerInfo backgroundcolor='#FFF1D6'> 
+                <MainContainerInfo backgroundcolor='#FFF1D6' height="673px"> 
                     <ImagePrevContainer paddingleft="80px">
                         <ImagePrev src={MapaDf} width=""/>
                     </ImagePrevContainer>
@@ -46,7 +48,15 @@ function SectionInfo() {
                         </TextInfo>
                     </TextContainer>
                 </MainContainerInfo>                
-            </MasterContainerInfo>            
+            </MasterContainerInfo>  
+                
+            <MasterContainerInfo>
+                <MainContainerInfo backgroundcolor="#FFFFFF" height="1289.22px">                                          
+                        <ImageBannerContainer>
+                            <ImageBanner src={Quantidade} height='1322' width='100%'/>
+                        </ImageBannerContainer>
+                </MainContainerInfo>
+            </MasterContainerInfo>       
         </>
     )
 }

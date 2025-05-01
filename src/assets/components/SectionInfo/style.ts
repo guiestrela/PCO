@@ -3,7 +3,9 @@ import styled from "styled-components";
 interface  MainContainerInfoType {
     backgroundimage?: string
     backgroundcolor?: string
-    
+    flexdirection?: string
+    height?: string
+    width?: string
 }
 
 interface  TextContainerType {
@@ -28,6 +30,11 @@ interface TituloInfoType {
     fontweight?: string
 }
 
+interface ImageBannerType {
+    width?: string
+    height?: string
+}
+
 export const MasterContainerInfo = styled.div`
     display: flex;
     align-items: center;
@@ -35,12 +42,14 @@ export const MasterContainerInfo = styled.div`
     width: 100%;    
     justify-content: center;
     align-items: center; 
+    padding-bottom: 80px;
 `;
 
 export const MainContainerInfo = styled.div<MainContainerInfoType>`
     display: flex;
     width: 1440px;
-    height: 673px; 
+    height: ${ props => props.height ? props.height : '1661px'}; 
+    flex-direction: ${ props => props.flexdirection ? props.flexdirection : 'row'};
     align-items: center;
     background-color: ${ props  => props.backgroundcolor ? props.backgroundcolor : 'transparent'};
     background-repeat: no-repeat;
@@ -92,14 +101,15 @@ export const ImagePrev = styled.img<ImagePrevType>`
 
 export const ImageBannerContainer = styled.div`
     display: flex;
-    width: 100%;
-    height: 100%;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;    
     padding: 0 80px 0 80px;    
 `;
 
-export const ImageBanner = styled.img`
-    width: 1279px;
-    height: 551px;    
+export const ImageBanner = styled.img<ImageBannerType>`
+    width: ${props => props.width ? props.width : ''};
+    height: ${props => props.height ? props.height : ''};    
 `;
+
