@@ -86,7 +86,6 @@ function SectionEnter() {
                             </ContainerButton>                        
                     </TextContainer>
                 </MainContainerEnter>
-                
                 <MainContainerEnter height="720px">
                     <ContainerEnter height="540.61px" width="1280.26px">
                     <ContainerColumn flexdirection="column">
