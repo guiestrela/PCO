@@ -1,22 +1,21 @@
 import styled from "styled-components";
 
-export const HeaderMainContainer = styled.header`
+export const FooterMainContainer = styled.header`
     display: flex;
     align-items: center;
-    height: 185px;
-    width: 100%;
-    
+    height: 335px;
+    width: 100%;    
     justify-content: center;
     align-items: center;
 `;
 
-export const HeaderContainer = styled.div`
+export const FooterContainer = styled.div`
     display: flex;
-    height: 129px;
+    height: 335px;
     width: 1440px;
     align-items: center;   
-    justify-content: space-between; 
-    background-color: #FFFFFF;    
+    justify-content: space-between;   
+    background-color: #023D69;  
 `;
 
 export const LogoContainer = styled.div`
