@@ -137,11 +137,11 @@ function SectionEnter() {
                     </ContainerEnter>
                 </MainContainerEnter>
 
-                <MainContainerEnter height="920px" backgroundcolor="#FFDF66">
+                <MainContainerEnter height="820px" backgroundcolor="#FFDF66">
                     <ContainerEnter height="540.61px" width="1280.26px">
                         <ContainerColumn flexdirection="column">
                             <TextContainer alignitems="start">
-                                <TituloInfo fontsize="88px" fontweight="700" color="#023D69" textalign="start">Faça parte<br/> do projeto e<br/> transforme a vida<br/> de centenas de <br/>pessoas                                
+                                <TituloInfo fontsize="77px" fontweight="700" color="#023D69" textalign="start">Faça parte<br/> do projeto e<br/> transforme a vida<br/> de centenas de <br/>pessoas                                
                                 </TituloInfo>                                
                             </TextContainer>
                             <ContainerButton justifycontent="start" alignitems="start" paddingright="128px" paddingtop="40px">
@@ -151,7 +151,7 @@ function SectionEnter() {
                             </ContainerButton>
                             </ContainerColumn>
                             <ContainerColumn>
-                            <ContainerImage gap="20px" paddingbottom="240px" paddingleft="40px">
+                            <ContainerImage gap="20px" paddingbottom="140px" paddingleft="40px">
                                 <ImageEnder src={facaParte} width="564.26px"
                                 height="540.61px"/>                               
                             </ContainerImage>
