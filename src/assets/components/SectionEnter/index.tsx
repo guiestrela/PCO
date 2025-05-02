@@ -6,6 +6,8 @@ import foto03 from "../../images/foto03.png";
 import foto04 from "../../images/foto04.png";
 import foto05 from "../../images/foto05.png";
 import comoAjudar from "../../images/comoAjudar.png";
+import fotoElipse from "../../images/fotoEllipse.png";
+import facaParte from "../../images/facaParte.png";
 
 import { Button, ContainerButton } from "../Button/style";
 
@@ -86,9 +88,10 @@ function SectionEnter() {
                             </ContainerButton>                        
                     </TextContainer>
                 </MainContainerEnter>
+
                 <MainContainerEnter height="720px">
                     <ContainerEnter height="540.61px" width="1280.26px">
-                    <ContainerColumn flexdirection="column">
+                        <ContainerColumn flexdirection="column">
                             <TextContainer alignitems="start">
                                 <TituloInfo fontsize="68px" fontweight="400" color="#023D69" textalign="start">Como ajudar?</TituloInfo>
                                 <TextInfo color="#023D69" fontfamily="Poppins" fontsize="28px" fontweight="400" textalign="start">
@@ -110,6 +113,52 @@ function SectionEnter() {
                     </ContainerEnter>
                 </MainContainerEnter>
                     
+                <MainContainerEnter height="720px">                    
+                    <ContainerEnter height="599px" width="1344px">
+                        <ContainerColumn>
+                            <ContainerImage >
+                                <ImageEnder marginleft="130px" src={fotoElipse} width="500px"
+                                height="500px"/>                               
+                            </ContainerImage>
+                        </ContainerColumn>
+                        <ContainerColumn flexdirection="column">
+                            <TextContainer alignitems="start" justifycontent="center" gap="25px">
+                                <TituloInfo fontsize="58px" fontweight="400" color="#023D69" textalign="start">O Projeto Pão com Ovo<br/> teve um crescimento de<br/> 567% ao longo dos anos</TituloInfo>
+                                <TextInfo color="#023D69" fontfamily="Poppins" fontsize="28px" fontweight="400" textalign="start">
+                                Queremos continuar crescendo e impactando ainda mais vidas, mas para isso precisamos da ajuda de doadores e voluntários. Sua contribuição é fundamental para que possamos expandir nossos serviços e alcançar mais pessoas necessitadas. Junte-se a nós e faça parte dessa transformação!
+                                </TextInfo>
+                            </TextContainer>
+                            <ContainerButton justifycontent="start" alignitems="start" paddingright="170px">
+                                <Button border="solid 2px #EEC93D" borderradius="4px" widthtotal="500px" heighttotal="63px" fontsize="28px" color="#021639" backgroundColor="#EEC93D">
+                                Acompanhe a evolução do projeto 
+                                </Button>                                
+                            </ContainerButton>
+                        </ContainerColumn>                        
+                    </ContainerEnter>
+                </MainContainerEnter>
+
+                <MainContainerEnter height="920px" backgroundcolor="#FFDF66">
+                    <ContainerEnter height="540.61px" width="1280.26px">
+                        <ContainerColumn flexdirection="column">
+                            <TextContainer alignitems="start">
+                                <TituloInfo fontsize="88px" fontweight="700" color="#023D69" textalign="start">Faça parte<br/> do projeto e<br/> transforme a vida<br/> de centenas de <br/>pessoas                                
+                                </TituloInfo>                                
+                            </TextContainer>
+                            <ContainerButton justifycontent="start" alignitems="start" paddingright="128px" paddingtop="40px">
+                                <Button border="solid 2px #023D69" borderradius="24px" widthtotal="500px" heighttotal="83px" fontsize="38px" color="#FFFFFF" backgroundColor="#023D69">
+                                Quero ser um doador 
+                                </Button>                                
+                            </ContainerButton>
+                            </ContainerColumn>
+                            <ContainerColumn>
+                            <ContainerImage gap="20px" paddingbottom="240px" paddingleft="40px">
+                                <ImageEnder src={facaParte} width="564.26px"
+                                height="540.61px"/>                               
+                            </ContainerImage>
+                        </ContainerColumn>
+                    </ContainerEnter>
+                </MainContainerEnter>
+
             </MasterContainerEnter>
         </>
     );

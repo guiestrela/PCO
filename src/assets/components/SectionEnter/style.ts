@@ -12,6 +12,8 @@ interface  TextContainerType {
     paddingright?: string
     paddingtop?: string
     alignitems?: string
+    justifycontent?: string
+    gap?: string
 }
 
 interface TituloInfoType {
@@ -33,10 +35,13 @@ interface TextInfoType {
 interface ImageEnderType {
     width?: string
     height?: string
+    marginleft?: string
 }
 
 interface ContainerImageType {
     gap?: string
+    paddingbottom?: string
+    paddingleft?: string
 }
 
 interface ContainerColumnType {
@@ -81,12 +86,13 @@ export const ContainerEnter = styled.div<ContainerEnterType>`
 export const TextContainer = styled.div<TextContainerType>`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: ${ props => props.justifycontent ? props.justifycontent : 'center'};
     align-items: ${ props => props.alignitems ? props.alignitems : 'center'};
     padding-top: ${ props => props.paddingtop ? props.paddingtop : ''};
     padding-left: ${ props => props.paddingleft ? props.paddingleft : ''};
     padding-right: ${ props => props.paddingright ? props.paddingright : ''};
-    gap: 20px;
+    gap: ${ props => props.gap ? props.gap : '20px'};
+    width: 100%;
 `;
 
 export const TituloInfo = styled.h1<TituloInfoType>`
@@ -117,13 +123,17 @@ export const ContainerImage = styled.div<ContainerImageType>`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;       
+    flex-direction: column; 
     gap: ${ props => props.gap ? props.gap : ''};
+    padding-bottom: ${ props => props.paddingbottom ? props.paddingbottom : ''};
+    padding-left: ${ props => props.paddingleft ? props.paddingleft : ''};
+    
 `;
 
 export const ImageEnder = styled.img<ImageEnderType>`
     width: ${props => props.width ? props.width : ''};
-    height: ${props => props.height ? props.height : ''};        
+    height: ${props => props.height ? props.height : ''}; 
+    margin-left: ${ props => props.marginleft ? props.marginleft : ''};;       
 `;
 
 export const ContainerColumn = styled.div<ContainerColumnType>`
