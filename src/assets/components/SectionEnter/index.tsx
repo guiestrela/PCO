@@ -64,10 +64,23 @@ function SectionEnter() {
                             <ContainerColumn>
                             <ContainerImage gap="20px">
                                 <ImageEnder src={foto05} width="722px"
-                                height="845px"/>                               
+                                height="848px"/>                               
                             </ContainerImage>
                         </ContainerColumn>
                     </ContainerEnter>
+                </MainContainerEnter>
+                <MainContainerEnter backgroundcolor="#023D69" height="720px">
+                    <TextContainer alignitems="center">
+                        <TituloInfo fontsize="72px" fontweight="700" color="#FFFFFF" textalign="center">O grupo pão com ovo<br/> 
+                                        preza pela transparência<br/> 
+                                            e honestidade
+                        </TituloInfo>
+                        <ContainerButton justifycontent="center" alignitems="center" paddingtop="40px">
+                                <Button border="solid 2px #FFDF78" borderradius="24px" widthtotal="760px" heighttotal="99px" fontsize="30px" color="#263238" backgroundColor="#FFDF78">
+                                Confira aqui a prestação de contas do projeto 
+                                </Button>                                
+                            </ContainerButton>                        
+                    </TextContainer>
                 </MainContainerEnter>
                     
             </MasterContainerEnter>

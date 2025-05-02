@@ -88,8 +88,8 @@ export const TituloInfo = styled.h1<TituloInfoType>`
     font-size: ${props => props.fontsize ? props.fontsize : '40px'};
     font-weight: ${props => props.fontweight ? props.fontweight : '600'};
     color: ${props => props.color ? props.color : ''};
-    text-align: ${props => props.textalign ? props.textalign : 'center'};
-
+    text-align: ${props => props.textalign ? props.textalign : 'center'};  
+    
 `;
 
 export const TextInfo = styled.p<TextInfoType>`
