@@ -43,6 +43,12 @@ interface ContainerColumnType {
     flexdirection?: string
 }
 
+interface ContainerEnterType {
+    backgroundcolor?: string
+    height?: string
+    width?: string
+}
+
 export const MasterContainerEnter = styled.div`
     display: flex;
     align-items: center;
@@ -63,13 +69,13 @@ export const MainContainerEnter = styled.div<MainContainerEnterType>`
     background-color: ${ props  => props.backgroundcolor ? props.backgroundcolor : 'transparent'};       
 `;
 
-export const ContainerEnter = styled.div`
+export const ContainerEnter = styled.div<ContainerEnterType>`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1302px;
-    height: 848px;
-    background-color: #FFF1D6;
+    width: ${ props => props.width ? props.width : '1302px'};
+    height: ${ props => props.height ? props.height : '848px'};
+    background-color: ${ props  => props.backgroundcolor ? props.backgroundcolor : 'transparent'};
 `;
 
 export const TextContainer = styled.div<TextContainerType>`

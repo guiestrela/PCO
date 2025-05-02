@@ -5,6 +5,8 @@ import foto02 from "../../images/foto02.png";
 import foto03 from "../../images/foto03.png";
 import foto04 from "../../images/foto04.png";
 import foto05 from "../../images/foto05.png";
+import comoAjudar from "../../images/comoAjudar.png";
+
 import { Button, ContainerButton } from "../Button/style";
 
 function SectionEnter() {
@@ -45,8 +47,9 @@ function SectionEnter() {
                         </Button>
                     </ContainerButton>
                 </MainContainerEnter>
+                
                 <MainContainerEnter backgroundcolor="#FFFFFF" height="848px">
-                    <ContainerEnter>
+                    <ContainerEnter backgroundcolor="#FFF1D6" height="848px" width="1302px">
                         <ContainerColumn flexdirection="column">
                             <TextContainer alignitems="start" paddingleft="25px">
                                 <TituloInfo fontsize="68px" fontweight="400" color="#023D69" textalign="start">O Exemplo <br/>Arrasta</TituloInfo>
@@ -69,6 +72,7 @@ function SectionEnter() {
                         </ContainerColumn>
                     </ContainerEnter>
                 </MainContainerEnter>
+                
                 <MainContainerEnter backgroundcolor="#023D69" height="720px">
                     <TextContainer alignitems="center">
                         <TituloInfo fontsize="72px" fontweight="700" color="#FFFFFF" textalign="center">O grupo pão com ovo<br/> 
@@ -81,6 +85,30 @@ function SectionEnter() {
                                 </Button>                                
                             </ContainerButton>                        
                     </TextContainer>
+                </MainContainerEnter>
+                
+                <MainContainerEnter height="720px">
+                    <ContainerEnter height="540.61px" width="1280.26px">
+                    <ContainerColumn flexdirection="column">
+                            <TextContainer alignitems="start">
+                                <TituloInfo fontsize="68px" fontweight="400" color="#023D69" textalign="start">Como ajudar?</TituloInfo>
+                                <TextInfo color="#023D69" fontfamily="Poppins" fontsize="28px" fontweight="400" textalign="start">
+                                A nossa missão depende da generosidade e do apoio da comunidade. Existem várias maneiras pelas quais você pode fazer a diferença e nos ajudar a alcançar mais pessoas necessitadas. Sua contribuição é essencial para continuarmos a transformar vidas.
+                                </TextInfo>
+                            </TextContainer>
+                            <ContainerButton justifycontent="start" alignitems="start" paddingright="128px">
+                                <Button border="solid 2px #FFDF78" borderradius="24px" widthtotal="500px" heighttotal="99px" fontsize="40px" color="#0C3077" backgroundColor="#FFDF78">
+                                Saiba como ajudar 
+                                </Button>                                
+                            </ContainerButton>
+                            </ContainerColumn>
+                            <ContainerColumn>
+                            <ContainerImage gap="20px">
+                                <ImageEnder src={comoAjudar} width="564.26px"
+                                height="540.61px"/>                               
+                            </ContainerImage>
+                        </ContainerColumn>
+                    </ContainerEnter>
                 </MainContainerEnter>
                     
             </MasterContainerEnter>
