@@ -13,6 +13,7 @@ interface ButtonType {
     maxwidth?: string
     margintop?: string
     alignitems?: string
+    textalign?: string
 }
 
 interface ContainerButtonType {
@@ -41,6 +42,9 @@ export const ContainerButton = styled.div<ContainerButtonType>`
 `;
 
 export const Button = styled.button<ButtonType>`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: ${props => props.border ? props.border : ""};
     border-radius: ${props => props.borderradius ? props.borderradius : ""};
     padding: ${props => props.padding ? props.padding : ""};
@@ -53,6 +57,10 @@ export const Button = styled.button<ButtonType>`
     font-size: ${props => props.fontsize ? props.fontsize : ""};
     color: ${props => props.color ? props.color : ""};
     align-items:${props => props.alignitems ? props.alignitems : ""};
+    text-align: ${props => props.textalign ? props.textalign : ""};
+    cursor: pointer; 
     
-    cursor: pointer;
+    
 `;
+
+

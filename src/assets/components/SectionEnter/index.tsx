@@ -8,6 +8,9 @@ import foto05 from "../../images/foto05.png";
 import comoAjudar from "../../images/comoAjudar.png";
 import fotoElipse from "../../images/fotoEllipse.png";
 import facaParte from "../../images/facaParte.png";
+import whatsapp from "../../images/whatsapps.png";
+import whatsappIcon from "../../icons/whatsaapIconButton.svg";
+
 
 import { Button, ContainerButton } from "../Button/style";
 
@@ -156,6 +159,31 @@ function SectionEnter() {
                                 height="540.61px"/>                               
                             </ContainerImage>
                         </ContainerColumn>
+                    </ContainerEnter>
+                </MainContainerEnter>
+
+                <MainContainerEnter height="720px">                    
+                    <ContainerEnter height="599px" width="1344px">
+                        <ContainerColumn>
+                            <ContainerImage >
+                                <ImageEnder src={whatsapp} width="500px"
+                                height="500px"/>                               
+                            </ContainerImage>
+                        </ContainerColumn>
+                        <ContainerColumn flexdirection="column">
+                            <TextContainer alignitems="start" justifycontent="center" gap="25px">
+                                <TituloInfo fontsize="88px" fontweight="400" color="#0C3077" textalign="start">Mantenha-se 
+                                atualizado!
+                                </TituloInfo>                             
+                            </TextContainer>
+                            <ContainerButton justifycontent="start" alignitems="start" paddingright="170px"
+                            paddingtop="40px">                          
+                                <Button padding="0 5px 0 40px" textalign="center" alignitems="center" border="solid 2px #023D69" borderradius="15px" widthtotal="498px" heighttotal="104px" fontsize="28px" color="#FFFFFF" backgroundColor="#023D69">
+                                <img src={whatsappIcon} alt=""/>
+                                Faça parte do grupo de Whatsapp! 
+                                </Button>                                
+                            </ContainerButton>
+                        </ContainerColumn>                        
                     </ContainerEnter>
                 </MainContainerEnter>
 
