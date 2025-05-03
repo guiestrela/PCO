@@ -1,4 +1,5 @@
 import { FooterContainer, FooterMainContainer, LogoContainer, LogoFooter, SocialContainer, SocialIcon, TextContainer, TextInfo, TituloInfo } from "./style";
+
 import logo from '../../icons/logoFooter.svg';
 import facebook from '../../icons/fbFooter.svg';
 import instagram from '../../icons/instagramFooter.svg';
