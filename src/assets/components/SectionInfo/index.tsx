@@ -11,7 +11,7 @@ function SectionInfo() {
     return (
         <>
             <MasterContainerInfo>
-                <MainContainerInfo backgroundimage={ImgBackCircle} height="673px"> 
+                <MainContainerInfo backgroundimage={ImgBackCircle} height="673px" heightmob="1100px"> 
                     <TextContainer paddingleft="80px">
                         <TituloInfo fontsize="68px" fontweight="400" color="#1B2F76">
                             Conheça o Grupo Pão com Ovo
@@ -20,22 +20,22 @@ function SectionInfo() {
                         O Pão com Ovo é um projeto social destinado a levar alento à pessoas em situação de rua, no Distrito Federal. Nasceu da vontade de  uma família manauara em fazer algo por  essas pessoas, muitas vezes invisíveis
                         </TextInfo>
                     </TextContainer>
-                    <ImagePrevContainer paddingright="80px">
+                    <ImagePrevContainer paddingright="80px" >
                         <ImagePrev src={PrevVideo} />
                     </ImagePrevContainer>
                 </MainContainerInfo>                
             </MasterContainerInfo>
 
             <MasterContainerInfo>
-                <MainContainerInfo height="673px">
+                <MainContainerInfo height="673px" heightmob="470px">
                     <ImageBannerContainer>
                         <ImageBanner src={QrCode} height='551px' width='1279px'/>
                     </ImageBannerContainer>                    
                 </MainContainerInfo>
             </MasterContainerInfo>
                         
-            <MasterContainerInfo>
-                <MainContainerInfo backgroundcolor='#FFF1D6' height="673px"> 
+            <MasterContainerInfo heightmob="1100px">
+                <MainContainerInfo backgroundcolor='#FFF1D6' height="673px" heightmob="1100px"> 
                     <ImagePrevContainer paddingleft="80px">
                         <ImagePrev src={MapaDf} width=""/>
                     </ImagePrevContainer>
@@ -50,10 +50,10 @@ function SectionInfo() {
                 </MainContainerInfo>                
             </MasterContainerInfo>  
                 
-            <MasterContainerInfo>
+            <MasterContainerInfo >
                 <MainContainerInfo backgroundcolor="#FFFFFF" height="1289.22px">                                          
                         <ImageBannerContainer>
-                            <ImageBanner src={Quantidade} height='1322' width='100%'/>
+                            <ImageBanner src={Quantidade} />
                         </ImageBannerContainer>
                 </MainContainerInfo>
             </MasterContainerInfo>       

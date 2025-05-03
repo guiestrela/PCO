@@ -62,6 +62,10 @@ export const MasterContainerEnter = styled.div`
     width: 100%;    
     justify-content: center;
     align-items: center; 
+
+    @media only screen and (max-width: 800px) {
+        width: 800px;     
+    }
 `;
 
 export const MainContainerEnter = styled.div<MainContainerEnterType>`
@@ -71,7 +75,11 @@ export const MainContainerEnter = styled.div<MainContainerEnterType>`
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: ${ props  => props.backgroundcolor ? props.backgroundcolor : 'transparent'};       
+    background-color: ${ props  => props.backgroundcolor ? props.backgroundcolor : 'transparent'};
+    
+    @media only screen and (max-width: 800px) {
+        width: 800px;     
+    }
 `;
 
 export const ContainerEnter = styled.div<ContainerEnterType>`

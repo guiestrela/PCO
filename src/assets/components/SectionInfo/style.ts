@@ -1,26 +1,34 @@
 import styled from "styled-components";
 
+interface MasterContainerInfoType {
+    heightmob?: string
+}
+
 interface  MainContainerInfoType {
     backgroundimage?: string
     backgroundcolor?: string
     flexdirection?: string
     height?: string
     width?: string
+    heightmob?: string
 }
 
 interface  TextContainerType {
     paddingleft?: string
     paddingright?: string
+    heightmob?: string
 }
 
 interface  ImagePrevContainerType {
     paddingleft?: string
-    paddingright?: string    
+    paddingright?: string 
+    heightmob?: string   
 }
 
 interface ImagePrevType {
     width?: string
     height?: string
+    
 }
 
 interface TituloInfoType {
@@ -35,7 +43,7 @@ interface ImageBannerType {
     height?: string
 }
 
-export const MasterContainerInfo = styled.div`
+export const MasterContainerInfo = styled.div<MasterContainerInfoType>`
     display: flex;
     align-items: center;
     height: 100%;
@@ -43,6 +51,13 @@ export const MasterContainerInfo = styled.div`
     justify-content: center;
     align-items: center; 
     padding-bottom: 80px;
+
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+        height: ${ props => props.heightmob ? props.heightmob : ''};
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
 `;
 
 export const MainContainerInfo = styled.div<MainContainerInfoType>`
@@ -56,6 +71,11 @@ export const MainContainerInfo = styled.div<MainContainerInfoType>`
     background-image: url(${({ backgroundimage }) => backgroundimage}) ;
     background-position-x: 100%;
     
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+        height: ${ props => props.heightmob ? props.heightmob : ''};
+        flex-direction: column;
+    }
 `;
 
 export const TextContainer = styled.div<TextContainerType>`
@@ -67,6 +87,14 @@ export const TextContainer = styled.div<TextContainerType>`
     height: 673px;
     padding-left: ${ props => props.paddingleft ? props.paddingleft : ''};
     padding-right: ${ props => props.paddingright ? props.paddingright : ''};
+
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+        height: ${ props => props.heightmob ? props.heightmob : ''};
+        align-items: center;
+        text-align: center;
+        padding-bottom: 90px;
+    }
 `;
 
 export const TituloInfo = styled.h1<TituloInfoType>`
@@ -74,6 +102,10 @@ export const TituloInfo = styled.h1<TituloInfoType>`
     font-size: ${props => props.fontsize ? props.fontsize : '40px'};
     font-weight: ${props => props.fontweight ? props.fontweight : '600'};
     color: ${props => props.color ? props.color : ''};
+
+    @media only screen and (max-width: 800px) {
+        padding-bottom: 50px;
+    }
 `;
 
 export const TextInfo = styled.p`
@@ -81,7 +113,7 @@ export const TextInfo = styled.p`
     font-size: 28px;
     font-weight: 300;
     color: #000000;
-    
+        
 `;
 
 export const ImagePrevContainer = styled.div<ImagePrevContainerType>`
@@ -92,6 +124,15 @@ export const ImagePrevContainer = styled.div<ImagePrevContainerType>`
     align-items: center;
     padding-left: ${ props => props.paddingleft ? props.paddingleft : ''};
     padding-right: ${ props => props.paddingright ? props.paddingright : ''};
+
+    @media only screen and (max-width: 800px) {
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px; 
+        width: 800px;
+        height: ${ props => props.heightmob ? props.heightmob : ''}; 
+        justify-content: start;        
+    }
 `;
 
 export const ImagePrev = styled.img<ImagePrevType>`
@@ -105,11 +146,25 @@ export const ImageBannerContainer = styled.div`
     align-items: center;
     width: 100%;
     height: 100%;    
-    padding: 0 80px 0 80px;    
+    padding: 0 80px 0 80px;  
+    
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+        padding: 0px;
+        height: 300px;
+        flex-direction: column;        
+        justify-content: start;
+    }
 `;
 
 export const ImageBanner = styled.img<ImageBannerType>`
     width: ${props => props.width ? props.width : ''};
-    height: ${props => props.height ? props.height : ''};    
+    height: ${props => props.height ? props.height : ''};     
+    
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+        
+    }
+
 `;
 
