@@ -25,7 +25,8 @@ export const HeaderContainer = styled.div`
 
 export const LogoContainer = styled.div`
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     padding-left: 80px;  
     
     @media only screen and (max-width: 800px) {
