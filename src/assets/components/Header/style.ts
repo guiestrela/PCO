@@ -7,6 +7,11 @@ export const HeaderMainContainer = styled.header`
     width: 100%;    
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+        height: 185px;        
+    }
 `;
 
 export const HeaderContainer = styled.div`
@@ -15,13 +20,23 @@ export const HeaderContainer = styled.div`
     width: 1440px;
     align-items: center;   
     justify-content: space-between; 
-    background-color: #FFFFFF;    
+    background-color: #FFFFFF; 
+    
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+        height: 185px; 
+        justify-content: space-around;                     
+    }
 `;
 
 export const LogoContainer = styled.div`
     display: flex;
     align-items: flex-start;
-    padding-left: 80px;    
+    padding-left: 80px;  
+    
+    @media only screen and (max-width: 800px) {
+        margin-left: 0px;
+    }
 `;
 
 export const LogoHeader = styled.img`
@@ -34,6 +49,10 @@ export const SocialContainer = styled.div`
     align-items: flex-end;  
     margin-right: 80px; 
     padding-top: 56px; 
+
+    @media only screen and (max-width: 800px) {
+        margin-right: 0px;       
+    }
 `;
 
 export const SocialIcon = styled.img`

@@ -7,7 +7,7 @@ function SectionButton() {
         <>
             <MasterContainerButton>
             <MainContainerButton>
-                <ContainerButton flex={1} paddingleft="80px" justifycontent="flex-start">
+                <ContainerButton flex={1} paddingleft="80px"  justifycontent="flex-start">
                     <Button borderradius="15px" border="solid 3px #023D69" widthtotal="500px" 
                     heighttotal="86px" fontsize="22px" 
                     backgroundColor="transparent" color="#023D69"

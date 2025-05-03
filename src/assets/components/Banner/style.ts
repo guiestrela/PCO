@@ -6,6 +6,12 @@ export const MainContainer = styled.header`
     height: 583px;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+        height: 900px;
+        flex-direction: column;
+    }
 `;
 
 export const BannerContainer = styled.div`
@@ -13,13 +19,28 @@ export const BannerContainer = styled.div`
     width: 1440px;
     height: 583px;
     
-    background-image: linear-gradient(to right,  #023D69, #0055A5 40%,  #F5C766);   
+    background-image: linear-gradient(to right,  #023D69, #0055A5 40%,  #F5C766); 
+    
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+        height: 1600px;
+        flex-direction: column;
+    }
+    
 `;
 
 export const ImageContainer = styled.div`
     display: flex;
-    width: 100%;     
+    width: 100%; 
+    height: 533px; 
+    
     justify-content: flex-end;
+
+    @media only screen and (max-width: 800px) {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 export const BannerImage = styled.img`
@@ -27,6 +48,13 @@ export const BannerImage = styled.img`
     height: 533px; 
     padding-right: 80px;   
     margin-top: 25px;
+    
+    @media only screen and (max-width: 800px) {
+        padding-right: 0px;
+        margin-top: 0px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
 `;
 
 export const BannerTextContainer = styled.div`
@@ -37,6 +65,13 @@ export const BannerTextContainer = styled.div`
     width: 100%;
     height: 583px;
     padding-left: 80px;
+
+    @media only screen and (max-width: 800px) {
+        justify-content: center;
+        align-items: center; 
+        padding-left: 0px;
+        padding-top: 50px;
+    }
 `;
 
 export const TextContainer = styled.h1`

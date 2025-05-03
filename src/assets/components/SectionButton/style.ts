@@ -7,7 +7,13 @@ export const MasterContainerButton = styled.div`
     width: 100%;
     background-color: #FFFFFF;
     justify-content: center;
-    align-items: center;          
+    align-items: center;  
+    
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+        height: 300px;   
+
+    }
 `;
 
 export const MainContainerButton = styled.div`
@@ -15,5 +21,13 @@ export const MainContainerButton = styled.div`
     width: 1440px;
     height: 180px; 
     align-items: center;
+
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+        height: 250px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 `;
 
