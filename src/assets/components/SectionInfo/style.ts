@@ -144,16 +144,11 @@ export const ImageBannerContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;    
-    padding: 0 80px 0 80px;  
+    width: 1440px;     
     
     @media only screen and (max-width: 800px) {
         width: 800px;
-        padding: 0px;
-        height: 300px;
-        flex-direction: column;        
-        justify-content: start;
+        padding: 0px;          
     }
 `;
 

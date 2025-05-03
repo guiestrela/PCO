@@ -65,6 +65,9 @@ export const FooterMainContainer = styled.header<FooterMainContainerType>`
     flex-direction: ${ props => props.flexdirection ? props.flexdirection : 'row'};
     background-color: ${ props => props.backgroundcolor ? props.backgroundcolor : 'transparent'}; 
     
+    @media only screen and (max-width: 800px) {
+        width: 800px;                
+    }
 
 `;
 

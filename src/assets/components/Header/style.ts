@@ -10,7 +10,6 @@ export const HeaderMainContainer = styled.header`
 
     @media only screen and (max-width: 800px) {
         width: 800px;
-        height: 185px;        
     }
 `;
 
@@ -20,13 +19,8 @@ export const HeaderContainer = styled.div`
     width: 1440px;
     align-items: center;   
     justify-content: space-between; 
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;    
     
-    @media only screen and (max-width: 800px) {
-        width: 800px;
-        height: 185px; 
-        justify-content: space-around;                     
-    }
 `;
 
 export const LogoContainer = styled.div`
@@ -51,7 +45,7 @@ export const SocialContainer = styled.div`
     padding-top: 56px; 
 
     @media only screen and (max-width: 800px) {
-        margin-right: 0px;       
+        margin-right: 40px;       
     }
 `;
 

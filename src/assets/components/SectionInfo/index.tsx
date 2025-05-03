@@ -51,10 +51,10 @@ function SectionInfo() {
             </MasterContainerInfo>  
                 
             <MasterContainerInfo >
-                <MainContainerInfo backgroundcolor="#FFFFFF" height="1289.22px">                                          
-                        <ImageBannerContainer>
-                            <ImageBanner src={Quantidade} />
-                        </ImageBannerContainer>
+                <MainContainerInfo backgroundcolor="#FFFFFF" height="1289px" heightmob="825px">                                          
+                    <ImageBannerContainer>
+                        <ImageBanner src={Quantidade} />
+                    </ImageBannerContainer>
                 </MainContainerInfo>
             </MasterContainerInfo>       
         </>

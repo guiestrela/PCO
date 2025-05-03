@@ -18,27 +18,27 @@ function SectionEnter() {
     return (
         <>
             <MasterContainerEnter>
-                <MainContainerEnter backgroundcolor="#023D69">
+                <MainContainerEnter backgroundcolor="#023D69" heightmob="2650px">
                         <TextContainer paddingtop="80px">
                             <TituloInfo fontsize="68px" fontweight="400" color="#FFFFFF">Você faz a diferença!</TituloInfo>
                             <TextInfo color="#FFFFFF" fontfamily="Poppins" fontsize="50px" fontweight="500">
                                 Veja como sua doação é convertida<br/> em solidariedade
                             </TextInfo>
                         </TextContainer> 
-                    <ContainerColumn>                      
+                    <ContainerColumn flexdirectionmob="column">                      
                         <MainContainerImage>
                             <ContainerImage gap="13px">
                                 <ImageEnder src={foto01} width="500px"
-                                height="334px"/>
-                                <ImageEnder src={foto02} width="500px" height="627px"/>
+                                />
+                                <ImageEnder src={foto02} width="500px" />
                             </ContainerImage>                        
                         </MainContainerImage> 
 
                         <MainContainerImage>
-                            <ContainerImage gap="20px">
+                            <ContainerImage gap="5px">
                                 <ImageEnder src={foto03} width="760px"
-                                height="467px"/>
-                                <ImageEnder src={foto04} width="760px" height="467px"/>
+                                />
+                                <ImageEnder src={foto04} width="760px" />
                             </ContainerImage>
                         </MainContainerImage>  
                     </ContainerColumn>
@@ -52,9 +52,9 @@ function SectionEnter() {
                     </ContainerButton>
                 </MainContainerEnter>
                 
-                <MainContainerEnter backgroundcolor="#FFFFFF" height="848px">
-                    <ContainerEnter backgroundcolor="#FFF1D6" height="848px" width="100%">
-                        <ContainerColumn flexdirection="column">
+                <MainContainerEnter backgroundcolor="#FFFFFF" height="848px" heightmob="1400px">
+                    <ContainerEnter backgroundcolor="#FFF1D6" height="848px" width="100%" >
+                        <ContainerColumn flexdirection="column" >
                             <TextContainer alignitems="start" paddingleft="25px">
                                 <TituloInfo fontsize="68px" fontweight="400" color="#023D69" textalign="start">O Exemplo <br/>Arrasta</TituloInfo>
                                 <TextInfo color="#023D69" fontfamily="Poppins" fontsize="28px" fontweight="400" textalign="start">
@@ -77,7 +77,7 @@ function SectionEnter() {
                     </ContainerEnter>
                 </MainContainerEnter>
                 
-                <MainContainerEnter backgroundcolor="#023D69" height="720px">
+                <MainContainerEnter backgroundcolor="#023D69" height="720px" heightmob="900px">"
                     <TextContainer alignitems="center">
                         <TituloInfo fontsize="72px" fontweight="700" color="#FFFFFF" textalign="center">O grupo pão com ovo<br/> 
                                         preza pela transparência<br/> 
@@ -91,7 +91,7 @@ function SectionEnter() {
                     </TextContainer>
                 </MainContainerEnter>
 
-                <MainContainerEnter height="720px">
+                <MainContainerEnter height="720px" heightmob="1300px">
                     <ContainerEnter height="540.61px" width="100%">
                         <ContainerColumn flexdirection="column">
                             <TextContainer alignitems="start" paddingleft="80px">
@@ -115,7 +115,7 @@ function SectionEnter() {
                     </ContainerEnter>
                 </MainContainerEnter>
                     
-                <MainContainerEnter height="720px">                    
+                <MainContainerEnter height="720px" heightmob="1300px">                    
                     <ContainerEnter height="599px" width="100%">
                         <ContainerColumn>
                             <ContainerImage >
@@ -139,7 +139,7 @@ function SectionEnter() {
                     </ContainerEnter>
                 </MainContainerEnter>
 
-                <MainContainerEnter height="820px" backgroundcolor="#FFDF66">
+                <MainContainerEnter height="820px" backgroundcolor="#FFDF66" heightmob="1400px">
                     <ContainerEnter height="540.61px" width="100%">
                         <ContainerColumn flexdirection="column">
                             <TextContainer alignitems="start" paddingleft="80px">
@@ -161,7 +161,7 @@ function SectionEnter() {
                     </ContainerEnter>
                 </MainContainerEnter>
 
-                <MainContainerEnter height="720px">                    
+                <MainContainerEnter height="720px" heightmob="1300px">                    
                     <ContainerEnter height="599px" width="100%">
                         <ContainerColumn>
                             <ContainerImage >

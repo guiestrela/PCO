@@ -5,6 +5,7 @@ interface  MainContainerEnterType {
     backgroundcolor?: string
     width?: string
     height?: string
+    heightmob?: string
 }
 
 interface  TextContainerType {
@@ -36,6 +37,8 @@ interface ImageEnderType {
     width?: string
     height?: string
     marginleft?: string
+
+    heightmob?: string
 }
 
 interface ContainerImageType {
@@ -46,12 +49,16 @@ interface ContainerImageType {
 
 interface ContainerColumnType {
     flexdirection?: string
+
+    flexdirectionmob?: string
 }
 
 interface ContainerEnterType {
     backgroundcolor?: string
     height?: string
     width?: string
+
+    heightmob?: string
 }
 
 export const MasterContainerEnter = styled.div`
@@ -78,7 +85,8 @@ export const MainContainerEnter = styled.div<MainContainerEnterType>`
     background-color: ${ props  => props.backgroundcolor ? props.backgroundcolor : 'transparent'};
     
     @media only screen and (max-width: 800px) {
-        width: 800px;     
+        width: 800px;
+        height: ${ props => props.heightmob ? props.heightmob : '1661px'}    
     }
 `;
 
@@ -89,6 +97,12 @@ export const ContainerEnter = styled.div<ContainerEnterType>`
     width: ${ props => props.width ? props.width : '1302px'};
     height: ${ props => props.height ? props.height : '848px'};
     background-color: ${ props  => props.backgroundcolor ? props.backgroundcolor : 'transparent'};
+
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+        height: ${ props => props.heightmob ? props.heightmob : '1661px'};
+        flex-direction: column;        
+    }
 `;
 
 export const TextContainer = styled.div<TextContainerType>`
@@ -101,6 +115,15 @@ export const TextContainer = styled.div<TextContainerType>`
     padding-right: ${ props => props.paddingright ? props.paddingright : ''};
     gap: ${ props => props.gap ? props.gap : '20px'};
     width: 100%;
+
+
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+        justify-content: center;
+        align-items: center; 
+        padding-left: 0;
+        padding-right: 0;
+    }
 `;
 
 export const TituloInfo = styled.h1<TituloInfoType>`
@@ -110,6 +133,10 @@ export const TituloInfo = styled.h1<TituloInfoType>`
     color: ${props => props.color ? props.color : ''};
     text-align: ${props => props.textalign ? props.textalign : 'center'};  
     
+    @media only screen and (max-width: 800px) {
+        width: 800px;        
+        text-align: center;
+    }
 `;
 
 export const TextInfo = styled.p<TextInfoType>`
@@ -118,6 +145,11 @@ export const TextInfo = styled.p<TextInfoType>`
     font-weight: ${props => props.fontweight ? props.fontweight : ''};
     color: ${props => props.color ? props.color : ''};
     text-align: ${props => props.textalign ? props.textalign : 'center'};
+
+    @media only screen and (max-width: 800px) {
+        width: 800px;        
+        text-align: center;
+    }
 `;
 
 export const MainContainerImage = styled.div`
@@ -136,6 +168,11 @@ export const ContainerImage = styled.div<ContainerImageType>`
     padding-bottom: ${ props => props.paddingbottom ? props.paddingbottom : ''};
     padding-left: ${ props => props.paddingleft ? props.paddingleft : ''};
     
+    @media only screen and (max-width: 800px) {
+        width: 800px;        
+        padding-left: 0;
+        padding-right: 0;
+    }
 `;
 
 export const ImageEnder = styled.img<ImageEnderType>`
@@ -152,4 +189,10 @@ export const ContainerColumn = styled.div<ContainerColumnType>`
     width: 100%;
     height: 100%;
     gap: 20px;
+
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+        flex-direction: ${ props => props.flexdirectionmob ? props.flexdirectionmob : ''};
+        };
+    
 `
