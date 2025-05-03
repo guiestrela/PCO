@@ -30,6 +30,7 @@ interface ContainerButtonType {
 
 export const ContainerButton = styled.div<ContainerButtonType>`
     display: flex;
+    width: 100%;
     flex: ${props => props.flex ? props.flex : ""};    
     justify-content: ${props => props.justifycontent ? props.justifycontent : ""};
     padding-left: ${props => props.paddingleft ? props.paddingleft : ""}; 
