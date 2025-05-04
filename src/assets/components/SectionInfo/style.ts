@@ -13,6 +13,8 @@ interface  MainContainerInfoType {
     heightmob?: string
     borderradius?: string
     gap?: string
+    alignitemsmob?: string
+    justifycontent?: string
 }
 
 interface  TextContainerType {
@@ -52,6 +54,9 @@ interface TextInfoType {
 interface ImageBannerType {
     width?: string
     height?: string
+
+    widthmog?: string
+    heightmob?: string
 }
 
 interface ImageBannerContainerType {
@@ -59,6 +64,10 @@ interface ImageBannerContainerType {
     height?: string
     alignitems?: string
     justifycontent?: string
+
+    justifycontentmob?: string
+    alignitemsmob?: string
+
 }
 
 export const MasterContainerInfo = styled.div<MasterContainerInfoType>`
@@ -89,6 +98,7 @@ export const MainContainerInfo = styled.div<MainContainerInfoType>`
     height: ${ props => props.height ? props.height : '1661px'}; 
     flex-direction: ${ props => props.flexdirection ? props.flexdirection : 'row'};
     align-items: center;
+    justify-content: ${ props => props.justifycontent ? props.justifycontent : 'center'};
     background-color: ${ props  => props.backgroundcolor ? props.backgroundcolor : 'transparent'};
     background-repeat: no-repeat;
     background-image: url(${({ backgroundimage }) => backgroundimage}) ;
@@ -99,7 +109,10 @@ export const MainContainerInfo = styled.div<MainContainerInfoType>`
     @media only screen and (max-width: 800px) {
         width: 800px;
         height: ${ props => props.heightmob ? props.heightmob : ''};
-        flex-direction: column;
+        flex-direction: column; 
+        align-items: ${ props => props.alignitemsmob ? props.alignitemsmob : 'center'};        
+        border-radius: 0;
+        gap: 0px;
     }
 
     @media only screen and (max-width: 600px) {
@@ -126,7 +139,7 @@ export const TextContainer = styled.div<TextContainerType>`
     }
 
     @media only screen and (max-width: 600px) {
-        width: 600px;        
+        width: 600px;            
     }
 `;
 
@@ -184,11 +197,15 @@ export const ImageBannerContainer = styled.div<ImageBannerContainerType>`
     
     @media only screen and (max-width: 800px) {
         width: 800px;
-        padding: 0px;          
+        padding: 0px; 
+        justify-content: ${props => props.justifycontentmob ? props.justifycontentmob : 'center'};
+        align-items: ${props => props.alignitemsmob ? props.alignitemsmob : 'center'};
+        gap: 0px;
+        flex-direction: column;
     }
 
     @media only screen and (max-width: 600px) {
-        width: 600px;                 
+        width: 600px;                
     }
 `;
 
@@ -197,11 +214,11 @@ export const ImageBanner = styled.img<ImageBannerType>`
     height: ${props => props.height ? props.height : ''};     
     
     @media only screen and (max-width: 800px) {
-        width: 800px;        
+        width: ${props => props.widthmog ? props.widthmog : '800px'};;        
     }
     
     @media only screen and (max-width: 600px) {
-        width: 600px;        
+        width: ${props => props.widthmog ? props.widthmog : '600px'}; 
     }   
 `;
 
