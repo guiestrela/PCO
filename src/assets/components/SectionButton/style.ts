@@ -12,7 +12,11 @@ export const MasterContainerButton = styled.div`
     @media only screen and (max-width: 800px) {
         width: 800px;
         height: 300px;   
+    }
 
+    @media only screen and (max-width: 600px) {
+        width: 600px;
+        height: 300px;   
     }
 `;
 
@@ -25,9 +29,12 @@ export const MainContainerButton = styled.div`
     @media only screen and (max-width: 800px) {
         width: 800px;
         height: 250px;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column;        
         justify-content: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 600px;     
     }
 `;
 

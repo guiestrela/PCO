@@ -69,6 +69,10 @@ export const FooterMainContainer = styled.header<FooterMainContainerType>`
         width: 800px;                
     }
 
+    @media only screen and (max-width: 600px) {
+        width: 600px;                
+    }
+
 `;
 
 export const FooterContainer = styled.div<FooterContainerType>`

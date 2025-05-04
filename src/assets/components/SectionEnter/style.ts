@@ -73,6 +73,11 @@ export const MasterContainerEnter = styled.div`
     @media only screen and (max-width: 800px) {
         width: 800px;     
     }
+
+    @media only screen and (max-width: 600px) {
+        width: 600px;        
+    }
+    
 `;
 
 export const MainContainerEnter = styled.div<MainContainerEnterType>`
@@ -88,6 +93,10 @@ export const MainContainerEnter = styled.div<MainContainerEnterType>`
         width: 800px;
         height: ${ props => props.heightmob ? props.heightmob : '1661px'}    
     }
+
+    @media only screen and (max-width: 600px) {
+        width: 600px;           
+    }
 `;
 
 export const ContainerEnter = styled.div<ContainerEnterType>`
@@ -102,6 +111,10 @@ export const ContainerEnter = styled.div<ContainerEnterType>`
         width: 800px;
         height: ${ props => props.heightmob ? props.heightmob : '1661px'};
         flex-direction: column;        
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 600px;        
     }
 `;
 
@@ -124,6 +137,10 @@ export const TextContainer = styled.div<TextContainerType>`
         padding-left: 0;
         padding-right: 0;
     }
+
+    @media only screen and (max-width: 600px) {
+        width: 600px;
+    }
 `;
 
 export const TituloInfo = styled.h1<TituloInfoType>`
@@ -137,6 +154,10 @@ export const TituloInfo = styled.h1<TituloInfoType>`
         width: 800px;        
         text-align: center;
     }
+
+    @media only screen and (max-width: 600px) {
+        width: 600px;        
+}
 `;
 
 export const TextInfo = styled.p<TextInfoType>`
@@ -149,6 +170,10 @@ export const TextInfo = styled.p<TextInfoType>`
     @media only screen and (max-width: 800px) {
         width: 800px;        
         text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 600px;       
     }
 `;
 
@@ -173,13 +198,23 @@ export const ContainerImage = styled.div<ContainerImageType>`
         padding-left: 0;
         padding-right: 0;
     }
+
+    @media only screen and (max-width: 600px) {
+        width: 600px;        
+    }
 `;
 
 export const ImageEnder = styled.img<ImageEnderType>`
     width: ${props => props.width ? props.width : ''};
     height: ${props => props.height ? props.height : ''}; 
-    margin-left: ${ props => props.marginleft ? props.marginleft : ''};;       
+    margin-left: ${ props => props.marginleft ? props.marginleft : ''};  
+
+    @media only screen and (max-width: 600px) {
+        width: 540px;        
+    };   
+
 `;
+
 
 export const ContainerColumn = styled.div<ContainerColumnType>`
     display: flex;
@@ -193,6 +228,10 @@ export const ContainerColumn = styled.div<ContainerColumnType>`
     @media only screen and (max-width: 800px) {
         width: 800px;
         flex-direction: ${ props => props.flexdirectionmob ? props.flexdirectionmob : ''};
-        };
+    };
+
+    @media only screen and (max-width: 600px) {
+        width: 600px;        
+    };
     
 `

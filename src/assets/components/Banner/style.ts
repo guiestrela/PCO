@@ -12,6 +12,12 @@ export const MainContainer = styled.header`
         height: 900px;
         flex-direction: column;
     }
+
+    @media only screen and (max-width: 600px) {
+        width: 600px;
+        height: 900px;
+        flex-direction: column;
+    }
 `;
 
 export const BannerContainer = styled.div`
@@ -27,6 +33,11 @@ export const BannerContainer = styled.div`
         flex-direction: column;
     }
     
+    @media only screen and (max-width: 600px) {
+        width: 600px;
+        height: 1600px;
+        flex-direction: column;
+    }
 `;
 
 export const ImageContainer = styled.div`
@@ -50,6 +61,14 @@ export const BannerImage = styled.img`
     margin-top: 25px;
     
     @media only screen and (max-width: 800px) {
+        padding-right: 0px;
+        margin-top: 0px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        height: 433px;
         padding-right: 0px;
         margin-top: 0px;
         padding-bottom: 50px;

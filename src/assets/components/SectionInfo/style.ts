@@ -58,6 +58,11 @@ export const MasterContainerInfo = styled.div<MasterContainerInfoType>`
         flex-direction: column;
         padding-bottom: 0px;
     }
+
+    @media only screen and (max-width: 600px) {
+        width: 600px;
+        height: ${ props => props.heightmob ? props.heightmob : ''};
+    }
 `;
 
 export const MainContainerInfo = styled.div<MainContainerInfoType>`
@@ -75,6 +80,10 @@ export const MainContainerInfo = styled.div<MainContainerInfoType>`
         width: 800px;
         height: ${ props => props.heightmob ? props.heightmob : ''};
         flex-direction: column;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 600px;
     }
 `;
 
@@ -94,6 +103,10 @@ export const TextContainer = styled.div<TextContainerType>`
         align-items: center;
         text-align: center;
         padding-bottom: 90px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 600px;        
     }
 `;
 
@@ -137,7 +150,11 @@ export const ImagePrevContainer = styled.div<ImagePrevContainerType>`
 
 export const ImagePrev = styled.img<ImagePrevType>`
     width: ${props => props.width ? props.width : ''};
-    height: ${props => props.height ? props.height : ''};    
+    height: ${props => props.height ? props.height : ''};   
+    
+    @media only screen and (max-width: 600px) {
+        width: 550px;        
+    }
 `;
 
 export const ImageBannerContainer = styled.div`
@@ -150,6 +167,10 @@ export const ImageBannerContainer = styled.div`
         width: 800px;
         padding: 0px;          
     }
+
+    @media only screen and (max-width: 600px) {
+        width: 600px;                 
+    }
 `;
 
 export const ImageBanner = styled.img<ImageBannerType>`
@@ -157,9 +178,11 @@ export const ImageBanner = styled.img<ImageBannerType>`
     height: ${props => props.height ? props.height : ''};     
     
     @media only screen and (max-width: 800px) {
-        width: 800px;
-        
+        width: 800px;        
     }
-
+    
+    @media only screen and (max-width: 600px) {
+        width: 600px;        
+    }   
 `;
 

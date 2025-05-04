@@ -11,6 +11,11 @@ export const HeaderMainContainer = styled.header`
     @media only screen and (max-width: 800px) {
         width: 800px;
     }
+
+    @media screen and (max-width: 600px) {
+        width: 600px;
+    
+    }
 `;
 
 export const HeaderContainer = styled.div`
@@ -32,6 +37,11 @@ export const LogoContainer = styled.div`
     @media only screen and (max-width: 800px) {
         margin-left: 0px;
     }
+
+    @media screen and (max-width: 600px) {
+        margin-left: 0px;
+    
+    }
 `;
 
 export const LogoHeader = styled.img`
@@ -47,6 +57,10 @@ export const SocialContainer = styled.div`
 
     @media only screen and (max-width: 800px) {
         margin-right: 40px;       
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-right: 20px;     
     }
 `;
 

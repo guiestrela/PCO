@@ -71,7 +71,7 @@ function SectionEnter() {
                             <ContainerColumn>
                             <ContainerImage gap="20px">
                                 <ImageEnder src={foto05} width="722px"
-                                height="848px"/>                               
+                                height="100%"/>                               
                             </ContainerImage>
                         </ContainerColumn>
                     </ContainerEnter>
@@ -84,7 +84,7 @@ function SectionEnter() {
                                             e honestidade
                         </TituloInfo>
                         <ContainerButton justifycontent="center" alignitems="center" paddingtop="40px">
-                                <Button border="solid 2px #FFDF78" borderradius="24px" widthtotal="760px" heighttotal="99px" fontsize="30px" color="#263238" backgroundColor="#FFDF78">
+                                <Button border="solid 2px #FFDF78" borderradius="24px" widthtotal="760px" heighttotal="99px" fontsize="30px" color="#263238" backgroundColor="#FFDF78" fontsizemob="25px" widthtmob="500px">
                                 Confira aqui a prestação de contas do projeto 
                                 </Button>                                
                             </ContainerButton>                        

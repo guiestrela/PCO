@@ -29,7 +29,7 @@ function SectionInfo() {
             <MasterContainerInfo>
                 <MainContainerInfo height="673px" heightmob="470px">
                     <ImageBannerContainer>
-                        <ImageBanner src={QrCode} height='551px' width='1279px'/>
+                        <ImageBanner src={QrCode} height='100%' width='100%'/>
                     </ImageBannerContainer>                    
                 </MainContainerInfo>
             </MasterContainerInfo>

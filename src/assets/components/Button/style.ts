@@ -14,6 +14,10 @@ interface ButtonType {
     margintop?: string
     alignitems?: string
     textalign?: string
+
+    widthtmob?: string
+    heightmob?: string
+    fontsizemob?: string
 }
 
 interface ContainerButtonType {
@@ -41,7 +45,7 @@ export const ContainerButton = styled.div<ContainerButtonType>`
     gap: ${props => props.gap ? props.gap : ""};
     align-items: ${props => props.alignitems ? props.alignitems : ""};
 
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 800px) {
         justify-content: start;
         flex-direction: column;
         align-items: center;
@@ -69,7 +73,11 @@ export const Button = styled.button<ButtonType>`
     text-align: ${props => props.textalign ? props.textalign : ""};
     cursor: pointer; 
     
-    
+    @media only screen and (max-width: 600px) {       
+        width: ${props => props.widthtmob ? props.widthtmob : ""};
+        height: ${props => props.heightmob ? props.heightmob : ""};
+        font-size: ${props => props.fontsizemob ? props.fontsizemob : ""};
+    }
 `;
 
 
