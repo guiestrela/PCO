@@ -27,10 +27,21 @@ function SectionInfo() {
             </MasterContainerInfo>
 
             <MasterContainerInfo>
-                <MainContainerInfo height="673px" heightmob="470px">
-                    <ImageBannerContainer>
-                        <ImageBanner src={QrCode} height='100%' width='100%'/>
-                    </ImageBannerContainer>                    
+                <MainContainerInfo height="560px">
+                <MainContainerInfo height="551px" backgroundcolor="#FFC13A" borderradius="78px" gap="15px">
+                        <ImageBannerContainer justifycontent="end">
+                            <ImageBanner src={QrCode} />
+                        </ImageBannerContainer>
+                        <TextContainer>
+                            <TituloInfo fontsize="68px" fontweight="700" color="#1B2F76">
+                                Distribua<br/> 
+                            solidarieade
+                            </TituloInfo>
+                            <TextInfo color="#1B2F76">
+                            Contribua com qualquer valor
+                            </TextInfo>
+                        </TextContainer>
+                </MainContainerInfo>
                 </MainContainerInfo>
             </MasterContainerInfo>
                         

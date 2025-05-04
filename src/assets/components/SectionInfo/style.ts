@@ -11,12 +11,16 @@ interface  MainContainerInfoType {
     height?: string
     width?: string
     heightmob?: string
+    borderradius?: string
+    gap?: string
 }
 
 interface  TextContainerType {
     paddingleft?: string
     paddingright?: string
     heightmob?: string
+    justifycontent?: string
+    alignitems?: string
 }
 
 interface  ImagePrevContainerType {
@@ -38,9 +42,23 @@ interface TituloInfoType {
     fontweight?: string
 }
 
+interface TextInfoType {
+    color?: string
+    fontfamily?: string
+    fontsize?: string
+    fontweight?: string
+}
+
 interface ImageBannerType {
     width?: string
     height?: string
+}
+
+interface ImageBannerContainerType {
+    width?: string
+    height?: string
+    alignitems?: string
+    justifycontent?: string
 }
 
 export const MasterContainerInfo = styled.div<MasterContainerInfoType>`
@@ -75,6 +93,8 @@ export const MainContainerInfo = styled.div<MainContainerInfoType>`
     background-repeat: no-repeat;
     background-image: url(${({ backgroundimage }) => backgroundimage}) ;
     background-position-x: 100%;
+    border-radius: ${ props => props.borderradius ? props.borderradius : '0px'};
+    gap: ${ props => props.gap ? props.gap : '0px'};
     
     @media only screen and (max-width: 800px) {
         width: 800px;
@@ -90,8 +110,8 @@ export const MainContainerInfo = styled.div<MainContainerInfoType>`
 export const TextContainer = styled.div<TextContainerType>`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: ${ props => props.justifycontent ? props.justifycontent : 'center'};
+    align-items: ${ props => props.alignitems ? props.alignitems : 'flex-start'};
     width: 100%;
     height: 673px;
     padding-left: ${ props => props.paddingleft ? props.paddingleft : ''};
@@ -121,12 +141,11 @@ export const TituloInfo = styled.h1<TituloInfoType>`
     }
 `;
 
-export const TextInfo = styled.p`
+export const TextInfo = styled.p<TextInfoType>`
     font-family: 'Poppins', sans-serif;
-    font-size: 28px;
-    font-weight: 300;
-    color: #000000;
-        
+    font-size: ${props => props.fontsize ? props.fontsize : '28px'};
+    font-weight: ${props => props.fontweight ? props.fontweight : '300'};
+    color: ${props => props.color ? props.color : '#000000'};        
 `;
 
 export const ImagePrevContainer = styled.div<ImagePrevContainerType>`
@@ -157,10 +176,10 @@ export const ImagePrev = styled.img<ImagePrevType>`
     }
 `;
 
-export const ImageBannerContainer = styled.div`
+export const ImageBannerContainer = styled.div<ImageBannerContainerType>`
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: ${props => props.justifycontent ? props.justifycontent : 'center'};
+    align-items: ${props => props.alignitems ? props.alignitems : 'center'};
     width: 1440px;     
     
     @media only screen and (max-width: 800px) {
