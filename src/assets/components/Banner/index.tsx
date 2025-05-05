@@ -23,7 +23,7 @@ function Banner() {
                     </BannerTextContainer>
                     <BannerImage  src={ImageBanner} alt="Banner" />
                 </ImageContainer>                     
-            </BannerContainer>              
+            </BannerContainer>                          
         </MainContainer>                         
         </>
     );
