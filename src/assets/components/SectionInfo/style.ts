@@ -86,8 +86,8 @@ export const MasterContainerInfo = styled.div<MasterContainerInfoType>`
         padding-bottom: 0px;
     }
 
-    @media only screen and (max-width: 600px) {
-        width: 600px;
+    @media only screen and (max-width: 400px) {
+        width: 400px;
         height: ${ props => props.heightmob ? props.heightmob : ''};
     }
 `;
@@ -115,8 +115,8 @@ export const MainContainerInfo = styled.div<MainContainerInfoType>`
         gap: 0px;
     }
 
-    @media only screen and (max-width: 600px) {
-        width: 600px;
+    @media only screen and (max-width: 400px) {
+        width: 400px;
     }
 `;
 
@@ -138,8 +138,9 @@ export const TextContainer = styled.div<TextContainerType>`
         padding-bottom: 90px;
     }
 
-    @media only screen and (max-width: 600px) {
-        width: 600px;            
+    @media only screen and (max-width: 400px) {
+        width: 400px; 
+        padding: 0px;           
     }
 `;
 
@@ -151,6 +152,11 @@ export const TituloInfo = styled.h1<TituloInfoType>`
 
     @media only screen and (max-width: 800px) {
         padding-bottom: 50px;
+        
+    }
+
+    @media only screen and (max-width: 600px) {
+        text-align: center;
     }
 `;
 
@@ -178,14 +184,18 @@ export const ImagePrevContainer = styled.div<ImagePrevContainerType>`
         height: ${ props => props.heightmob ? props.heightmob : ''}; 
         justify-content: start;        
     }
+
+    @media only screen and (max-width: 400px) {
+        width: 400px;
+    }
 `;
 
 export const ImagePrev = styled.img<ImagePrevType>`
     width: ${props => props.width ? props.width : ''};
     height: ${props => props.height ? props.height : ''};   
     
-    @media only screen and (max-width: 600px) {
-        width: 550px;        
+    @media only screen and (max-width: 400px) {
+        width: 380px;        
     }
 `;
 
@@ -204,8 +214,8 @@ export const ImageBannerContainer = styled.div<ImageBannerContainerType>`
         flex-direction: column;
     }
 
-    @media only screen and (max-width: 600px) {
-        width: 600px;                
+    @media only screen and (max-width: 400px) {
+        width: 400px;                
     }
 `;
 
@@ -217,8 +227,8 @@ export const ImageBanner = styled.img<ImageBannerType>`
         width: ${props => props.widthmog ? props.widthmog : '800px'};;        
     }
     
-    @media only screen and (max-width: 600px) {
-        width: ${props => props.widthmog ? props.widthmog : '600px'}; 
+    @media only screen and (max-width: 400px) {
+        width: ${props => props.widthmog ? props.widthmog : '400px'}; 
     }   
 `;
 

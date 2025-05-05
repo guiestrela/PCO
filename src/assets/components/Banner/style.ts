@@ -13,9 +13,9 @@ export const MainContainer = styled.header`
         flex-direction: column;
     }
 
-    @media only screen and (max-width: 600px) {
-        width: 600px;
-        height: 900px;
+    @media only screen and (max-width: 400px) {
+        width: 400px;
+        height: 650px;
         flex-direction: column;
     }
 `;
@@ -33,10 +33,9 @@ export const BannerContainer = styled.div`
         flex-direction: column;
     }
     
-    @media only screen and (max-width: 600px) {
-        width: 600px;
-        height: 1600px;
-        flex-direction: column;
+    @media only screen and (max-width: 400px) {
+        width: 400px; 
+        height: 1700px;        
     }
 `;
 
@@ -51,6 +50,11 @@ export const ImageContainer = styled.div`
         justify-content: start;
         flex-direction: column;
         align-items: center;
+    }
+
+    @media only screen and (max-width: 800px) {
+        width: 400px;
+        height: 300px;
     }
 `;
 
@@ -67,12 +71,8 @@ export const BannerImage = styled.img`
         padding-top: 50px;
     }
 
-    @media only screen and (max-width: 600px) {
-        height: 433px;
-        padding-right: 0px;
-        margin-top: 0px;
-        padding-bottom: 50px;
-        padding-top: 50px;
+    @media only screen and (max-width: 400px) {
+        height: 350px;        
     }
 `;
 
@@ -91,6 +91,10 @@ export const BannerTextContainer = styled.div`
         padding-left: 0px;
         padding-top: 50px;
     }
+
+    @media only screen and (max-width: 400px) {
+        width: 400px;
+    }
 `;
 
 export const TextContainer = styled.h1`
@@ -98,4 +102,10 @@ export const TextContainer = styled.h1`
     font-size: 70px;
     font-weight: 700;
     color: #FFFFFF;
+
+    @media only screen and (max-width: 400px) {
+        font-size: 50px;
+        font-weight: 500;        
+    }
+
 `;

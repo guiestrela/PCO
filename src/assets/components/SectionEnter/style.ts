@@ -23,6 +23,8 @@ interface TituloInfoType {
     fontsize?: string
     fontweight?: string
     textalign?: string
+
+    fontsizemob?: string
 }
 
 interface TextInfoType {
@@ -38,6 +40,7 @@ interface ImageEnderType {
     height?: string
     marginleft?: string
 
+    widthmob?: string
     heightmob?: string
 }
 
@@ -74,8 +77,8 @@ export const MasterContainerEnter = styled.div`
         width: 800px;     
     }
 
-    @media only screen and (max-width: 600px) {
-        width: 600px;        
+    @media only screen and (max-width: 400px) {
+        width: 400px;        
     }
     
 `;
@@ -89,13 +92,10 @@ export const MainContainerEnter = styled.div<MainContainerEnterType>`
     justify-content: center;
     background-color: ${ props  => props.backgroundcolor ? props.backgroundcolor : 'transparent'};
     
-    @media only screen and (max-width: 800px) {
-        width: 800px;
-        height: ${ props => props.heightmob ? props.heightmob : '1661px'}    
-    }
 
-    @media only screen and (max-width: 600px) {
-        width: 600px;           
+    @media only screen and (max-width: 400px) {
+        width: 400px;
+        height: ${ props => props.heightmob ? props.heightmob : '1661px'};
     }
 `;
 
@@ -113,8 +113,8 @@ export const ContainerEnter = styled.div<ContainerEnterType>`
         flex-direction: column;        
     }
 
-    @media only screen and (max-width: 600px) {
-        width: 600px;        
+    @media only screen and (max-width: 400px) {
+        width: 400px;        
     }
 `;
 
@@ -138,8 +138,8 @@ export const TextContainer = styled.div<TextContainerType>`
         padding-right: 0;
     }
 
-    @media only screen and (max-width: 600px) {
-        width: 600px;
+    @media only screen and (max-width: 400px) {
+        width: 400px;
     }
 `;
 
@@ -153,10 +153,12 @@ export const TituloInfo = styled.h1<TituloInfoType>`
     @media only screen and (max-width: 800px) {
         width: 800px;        
         text-align: center;
+        font-size: ${props => props.fontsizemob ? props.fontsizemob : '30px'};
+;
     }
 
-    @media only screen and (max-width: 600px) {
-        width: 600px;        
+    @media only screen and (max-width: 400px) {
+        width: 400px;        
 }
 `;
 
@@ -172,8 +174,8 @@ export const TextInfo = styled.p<TextInfoType>`
         text-align: center;
     }
 
-    @media only screen and (max-width: 600px) {
-        width: 600px;       
+    @media only screen and (max-width: 400px) {
+        width: 400px;       
     }
 `;
 
@@ -199,8 +201,8 @@ export const ContainerImage = styled.div<ContainerImageType>`
         padding-right: 0;
     }
 
-    @media only screen and (max-width: 600px) {
-        width: 600px;        
+    @media only screen and (max-width: 400px) {
+        width: 400px;        
     }
 `;
 
@@ -209,8 +211,9 @@ export const ImageEnder = styled.img<ImageEnderType>`
     height: ${props => props.height ? props.height : ''}; 
     margin-left: ${ props => props.marginleft ? props.marginleft : ''};  
 
-    @media only screen and (max-width: 600px) {
-        width: 540px;        
+    @media only screen and (max-width: 400px) {
+        width: ${props => props.widthmob ? props.widthmob : '380px'};        
+        height: ${props => props.heightmob ? props.heightmob : ''};        
     };   
 
 `;
@@ -230,8 +233,8 @@ export const ContainerColumn = styled.div<ContainerColumnType>`
         flex-direction: ${ props => props.flexdirectionmob ? props.flexdirectionmob : ''};
     };
 
-    @media only screen and (max-width: 600px) {
-        width: 600px;        
+    @media only screen and (max-width: 400px) {
+        width: 400px;        
     };
     
 `

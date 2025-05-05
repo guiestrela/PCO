@@ -11,7 +11,7 @@ function SectionInfo() {
     return (
         <>
             <MasterContainerInfo>
-                <MainContainerInfo backgroundimage={ImgBackCircle} height="673px" heightmob="1100px"> 
+                <MainContainerInfo backgroundimage={ImgBackCircle} height="673px" heightmob="900px"> 
                     <TextContainer paddingleft="80px">
                         <TituloInfo fontsize="68px" fontweight="400" color="#1B2F76">
                             Conheça o Grupo Pão com Ovo
@@ -27,7 +27,7 @@ function SectionInfo() {
             </MasterContainerInfo>
 
             <MasterContainerInfo>
-                <MainContainerInfo height="560px">
+                <MainContainerInfo height="551px">
                 <MainContainerInfo height="551px" heightmob="800px" backgroundcolor="#FFC13A" borderradius="78px" gap="15px">
                         <ImageBannerContainer justifycontent="end"  alignitemsmob="center">
                             <ImageBanner src={QrCode} widthmog="300px"/>
@@ -45,7 +45,7 @@ function SectionInfo() {
                 </MainContainerInfo>
             </MasterContainerInfo>
                         
-            <MasterContainerInfo heightmob="1100px">
+            <MasterContainerInfo heightmob="1000px">
                 <MainContainerInfo backgroundcolor='#FFF1D6' height="673px" heightmob="1100px"> 
                     <ImagePrevContainer paddingleft="80px">
                         <ImagePrev src={MapaDf} width=""/>
@@ -62,7 +62,7 @@ function SectionInfo() {
             </MasterContainerInfo>  
                 
             <MasterContainerInfo >
-                <MainContainerInfo backgroundcolor="#FFFFFF" height="1289px" heightmob="825px">                                          
+                <MainContainerInfo backgroundcolor="#FFFFFF" height="1289px" heightmob="425px">                                          
                     <ImageBannerContainer>
                         <ImageBanner src={Quantidade} />
                     </ImageBannerContainer>

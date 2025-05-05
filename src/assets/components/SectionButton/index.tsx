@@ -8,7 +8,7 @@ function SectionButton() {
             <MasterContainerButton>
             <MainContainerButton>
                 <ContainerButton flex={1} paddingleft="80px"  justifycontent="flex-start">
-                    <Button borderradius="15px" border="solid 3px #023D69" widthtotal="500px" 
+                    <Button borderradius="15px" border="solid 3px #023D69" widthtotal="500px" widthtmob="380px" 
                     heighttotal="86px" fontsize="22px" 
                     backgroundColor="transparent" color="#023D69"
                     
@@ -18,7 +18,7 @@ function SectionButton() {
                     </Button>
                 </ContainerButton>
                 <ContainerButton flex={1} paddingright="80px" justifycontent="flex-end">
-                    <Button borderradius="15px" border="solid 3px #023D69" widthtotal="500px" 
+                    <Button borderradius="15px" border="solid 3px #023D69" widthtotal="500px" widthtmob="380px" 
                     heighttotal="86px" fontsize="22px"
                     backgroundColor="transparent" color="#023D69"  
                     onClick={function (): void {

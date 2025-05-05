@@ -13,7 +13,8 @@ export const HeaderMainContainer = styled.header`
     }
 
     @media screen and (max-width: 600px) {
-        width: 600px;
+        width: 400px;
+        height: 100%;
     
     }
 `;
@@ -39,14 +40,23 @@ export const LogoContainer = styled.div`
     }
 
     @media screen and (max-width: 600px) {
-        margin-left: 0px;
-    
+        margin-left: 0px; 
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;  
     }
 `;
 
 export const LogoHeader = styled.img`
-    width: 235px;       
+    width: 235px;
+    
+    @media screen and (max-width: 600px) {
+        width: 150px;
+    
+    }
 `;
+
+
 
 export const SocialContainer = styled.div`
     display: flex;    
@@ -68,4 +78,9 @@ export const SocialIcon = styled.img`
     width: 57px;
     margin-left: 2px;
     cursor: pointer;
+
+    @media screen and (max-width: 600px) {
+        width: 40px;    
+    }
 `;
+

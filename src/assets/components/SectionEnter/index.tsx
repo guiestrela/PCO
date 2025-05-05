@@ -18,7 +18,7 @@ function SectionEnter() {
     return (
         <>
             <MasterContainerEnter>
-                <MainContainerEnter backgroundcolor="#023D69" heightmob="2650px">
+                <MainContainerEnter backgroundcolor="#023D69" heightmob="2000px">
                         <TextContainer paddingtop="80px">
                             <TituloInfo fontsize="68px" fontweight="400" color="#FFFFFF">Você faz a diferença!</TituloInfo>
                             <TextInfo color="#FFFFFF" fontfamily="Poppins" fontsize="50px" fontweight="500">
@@ -43,16 +43,16 @@ function SectionEnter() {
                         </MainContainerImage>  
                     </ContainerColumn>
                     <ContainerButton flexdirection="column" justifycontent="center" paddingtop="80px" paddingbottom="70px" gap="40px" alignitems="center">
-                        <Button border="solid 2px #023D69" borderradius="12px" widthtotal="543px" heighttotal="66px" fontsize="40px" color="#0C3077">
+                        <Button fontsizemob="30px" widthtmob="380px" border="solid 2px #023D69" borderradius="12px" widthtotal="543px" heighttotal="66px" fontsize="40px" color="#0C3077">
                             Acompanhe nossas ações
                         </Button>
-                        <Button border="solid 2px #023D69" borderradius="12px" widthtotal="543px" heighttotal="66px" fontsize="40px" color="#0C3077">
+                        <Button fontsizemob="30px" widthtmob='380px' border="solid 2px #023D69" borderradius="12px" widthtotal="543px" heighttotal="66px" fontsize="40px" color="#0C3077">
                             Seja um voluntário
                         </Button>
                     </ContainerButton>
                 </MainContainerEnter>
                 
-                <MainContainerEnter backgroundcolor="#FFFFFF" height="848px" heightmob="1400px">
+                <MainContainerEnter backgroundcolor="#FFFFFF" height="848px" heightmob="1000px">
                     <ContainerEnter backgroundcolor="#FFF1D6" height="848px" width="100%" >
                         <ContainerColumn flexdirection="column" >
                             <TextContainer alignitems="start" paddingleft="25px">
@@ -63,7 +63,7 @@ function SectionEnter() {
                                 </TextInfo>
                             </TextContainer>
                             <ContainerButton justifycontent="start" alignitems="start" paddingleft="20px">
-                                <Button border="solid 2px #FFDF78" borderradius="12px" widthtotal="543px" heighttotal="66px" fontsize="40px" color="#0C3077" backgroundColor="#FFDF78">
+                                <Button fontsizemob="28px" widthtmob="380px" border="solid 2px #FFDF78" borderradius="12px" widthtotal="543px" heighttotal="66px" fontsize="40px" color="#0C3077" backgroundColor="#FFDF78">
                                 Siga nosso Instagram! 
                                 </Button>                                
                             </ContainerButton>
@@ -77,21 +77,21 @@ function SectionEnter() {
                     </ContainerEnter>
                 </MainContainerEnter>
                 
-                <MainContainerEnter backgroundcolor="#023D69" height="720px" heightmob="900px">"
+                <MainContainerEnter backgroundcolor="#023D69" height="720px" heightmob="500px">
                     <TextContainer alignitems="center">
-                        <TituloInfo fontsize="72px" fontweight="700" color="#FFFFFF" textalign="center">O grupo pão com ovo<br/> 
+                        <TituloInfo fontsizemob="55px" fontsize="72px" fontweight="700" color="#FFFFFF" textalign="center">O grupo pão com ovo<br/> 
                                         preza pela transparência<br/> 
                                             e honestidade
                         </TituloInfo>
                         <ContainerButton justifycontent="center" alignitems="center" paddingtop="40px">
-                                <Button border="solid 2px #FFDF78" borderradius="24px" widthtotal="760px" heighttotal="99px" fontsize="30px" color="#263238" backgroundColor="#FFDF78" fontsizemob="25px" widthtmob="500px">
+                                <Button border="solid 2px #FFDF78" borderradius="24px" widthtotal="760px" heighttotal="99px" fontsize="30px" color="#263238" backgroundColor="#FFDF78" fontsizemob="25px" widthtmob="380px">
                                 Confira aqui a prestação de contas do projeto 
                                 </Button>                                
                             </ContainerButton>                        
                     </TextContainer>
                 </MainContainerEnter>
 
-                <MainContainerEnter height="720px" heightmob="1300px">
+                <MainContainerEnter height="720px" heightmob="1000px">
                     <ContainerEnter height="540.61px" width="100%">
                         <ContainerColumn flexdirection="column">
                             <TextContainer alignitems="start" paddingleft="80px">
@@ -101,7 +101,7 @@ function SectionEnter() {
                                 </TextInfo>
                             </TextContainer>
                             <ContainerButton justifycontent="start" alignitems="start" paddingleft="80px">
-                                <Button border="solid 2px #FFDF78" borderradius="24px" widthtotal="500px" heighttotal="99px" fontsize="40px" color="#0C3077" backgroundColor="#FFDF78">
+                                <Button widthtmob="380px" border="solid 2px #FFDF78" borderradius="24px" widthtotal="500px" heighttotal="99px" fontsize="40px" color="#0C3077" backgroundColor="#FFDF78">
                                 Saiba como ajudar 
                                 </Button>                                
                             </ContainerButton>
@@ -109,18 +109,19 @@ function SectionEnter() {
                             <ContainerColumn>
                             <ContainerImage gap="20px">
                                 <ImageEnder src={comoAjudar} width="564.26px"
-                                height="540.61px"/>                               
+                                height="540.61px" widthmob="380px" heightmob="380px"/>                               
                             </ContainerImage>
                         </ContainerColumn>
                     </ContainerEnter>
                 </MainContainerEnter>
                     
-                <MainContainerEnter height="720px" heightmob="1300px">                    
+                <MainContainerEnter height="720px" heightmob="1000px">                    
                     <ContainerEnter height="599px" width="100%">
                         <ContainerColumn>
                             <ContainerImage >
                                 <ImageEnder src={fotoElipse} width="500px"
-                                height="500px"/>                               
+                                height="500px" widthmob="380px" heightmob="380px"
+                                />                               
                             </ContainerImage>
                         </ContainerColumn>
                         <ContainerColumn flexdirection="column">
@@ -131,7 +132,7 @@ function SectionEnter() {
                                 </TextInfo>
                             </TextContainer>
                             <ContainerButton justifycontent="start" alignitems="start" paddingright="170px">
-                                <Button border="solid 2px #EEC93D" borderradius="4px" widthtotal="500px" heighttotal="63px" fontsize="28px" color="#021639" backgroundColor="#EEC93D">
+                                <Button widthtmob="380px" border="solid 2px #EEC93D" borderradius="4px" widthtotal="500px" heighttotal="63px" fontsize="28px" color="#021639" backgroundColor="#EEC93D">
                                 Acompanhe a evolução do projeto 
                                 </Button>                                
                             </ContainerButton>
@@ -139,7 +140,7 @@ function SectionEnter() {
                     </ContainerEnter>
                 </MainContainerEnter>
 
-                <MainContainerEnter height="820px" backgroundcolor="#FFDF66" heightmob="1400px">
+                <MainContainerEnter height="820px" backgroundcolor="#FFDF66" heightmob="1000px">
                     <ContainerEnter height="540.61px" width="100%">
                         <ContainerColumn flexdirection="column">
                             <TextContainer alignitems="start" paddingleft="80px">
@@ -147,7 +148,7 @@ function SectionEnter() {
                                 </TituloInfo>                                
                             </TextContainer>
                             <ContainerButton justifycontent="start" alignitems="start" paddingleft="80px" paddingtop="40px">
-                                <Button border="solid 2px #023D69" borderradius="24px" widthtotal="500px" heighttotal="83px" fontsize="38px" color="#FFFFFF" backgroundColor="#023D69">
+                                <Button widthtmob="380px" border="solid 2px #023D69" borderradius="24px" widthtotal="500px" heighttotal="83px" fontsize="38px" color="#FFFFFF" backgroundColor="#023D69">
                                 Quero ser um doador 
                                 </Button>                                
                             </ContainerButton>
@@ -155,18 +156,19 @@ function SectionEnter() {
                             <ContainerColumn>
                             <ContainerImage gap="20px" paddingbottom="140px" paddingleft="40px">
                                 <ImageEnder src={facaParte} width="564.26px"
-                                height="540.61px"/>                               
+                                height="540.61px" widthmob="380px" heightmob="380px"/>                               
                             </ContainerImage>
                         </ContainerColumn>
                     </ContainerEnter>
                 </MainContainerEnter>
 
-                <MainContainerEnter height="720px" heightmob="1300px">                    
+                <MainContainerEnter height="720px" heightmob="900px">                    
                     <ContainerEnter height="599px" width="100%">
                         <ContainerColumn>
                             <ContainerImage >
                                 <ImageEnder src={whatsapp} width="500px"
-                                height="500px"/>                               
+                                height="500px" widthmob="380px" heightmob="380px"
+                                />                               
                             </ContainerImage>
                         </ContainerColumn>
                         <ContainerColumn flexdirection="column">
@@ -177,7 +179,7 @@ function SectionEnter() {
                             </TextContainer>
                             <ContainerButton justifycontent="start" alignitems="start"
                             paddingtop="40px">                          
-                                <Button padding="0 5px 0 40px" textalign="center" alignitems="center" border="solid 2px #023D69" borderradius="15px" widthtotal="498px" heighttotal="104px" fontsize="28px" color="#FFFFFF" backgroundColor="#023D69">
+                                <Button widthtmob="380px" padding="0 5px 0 40px" textalign="center" alignitems="center" border="solid 2px #023D69" borderradius="15px" widthtotal="498px" heighttotal="104px" fontsize="28px" color="#FFFFFF" backgroundColor="#023D69">
                                 <img src={whatsappIcon} alt=""/>
                                 Faça parte do grupo de Whatsapp! 
                                 </Button>                                

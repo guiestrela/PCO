@@ -69,8 +69,10 @@ export const FooterMainContainer = styled.header<FooterMainContainerType>`
         width: 800px;                
     }
 
-    @media only screen and (max-width: 600px) {
-        width: 600px;                
+    @media only screen and (max-width: 400px) {
+        width: 400px;
+        
+                            
     }
 
 `;
@@ -87,6 +89,16 @@ export const FooterContainer = styled.div<FooterContainerType>`
     padding-right: ${ props => props.paddingright ? props.paddingright : ''};
     padding-left: ${ props => props.paddingleft ? props.paddingleft : ''};
 
+    @media only screen and (max-width: 400px) {
+        width: 400px; 
+        height: 500px;
+        flex-direction: column;  
+        align-items: center;
+        justify-content: center;  
+        padding: 0px;
+                        
+    }
+
 `;
 
 export const LogoContainer = styled.div`
@@ -95,20 +107,21 @@ export const LogoContainer = styled.div`
 
 export const LogoFooter = styled.img`
     width: 235px; 
+    
 `;
 
 export const SocialContainer = styled.div`
     display: flex;   
     padding-top: 20px;
-    align-items: flex-start
+    align-items: flex-start;
 `;
 
 export const SocialIcon = styled.img<SocialIconType>`
     width: ${ props => props.width ? props.width : ''};   
     margin-left: ${ props => props.marginleft ? props.marginleft : ''};
     height: ${ props => props.height ? props.height : ''};
-    cursor: pointer;
-    
+    cursor: pointer;    
+   
 `;
 
 export const TextContainer = styled.div<TextContainerType>`
@@ -121,7 +134,14 @@ export const TextContainer = styled.div<TextContainerType>`
     padding-right: ${ props => props.paddingright ? props.paddingright : ''};
     gap: ${ props => props.gap ? props.gap : '20px'};
     width: 100%;
+
+    @media only screen and (max-width: 400px) {
+        justify-content: center;
+        align-items: center; 
+        text-align: center;               
+    }
 `;
+
 
 export const TituloInfo = styled.h1<TituloInfoType>`
     font-family: 'Poppins', sans-serif;
@@ -130,6 +150,10 @@ export const TituloInfo = styled.h1<TituloInfoType>`
     color: ${props => props.color ? props.color : ''};
     text-align: ${props => props.textalign ? props.textalign : 'center'};  
     
+    @media only screen and (max-width: 400px) {
+        font-size: 20px;
+        text-align: center;                
+    }
 `;
 
 export const TextInfo = styled.p<TextInfoType>`
@@ -140,5 +164,8 @@ export const TextInfo = styled.p<TextInfoType>`
     text-align: ${props => props.textalign ? props.textalign : 'center'};
     padding-top: ${ props => props.paddingtop ? props.paddingtop : ''};
     
+    @media only screen and (max-width: 400px) {        
+        text-align: center;                
+    }
 `;
 
