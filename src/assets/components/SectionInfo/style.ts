@@ -80,14 +80,12 @@ export const MasterContainerInfo = styled.div<MasterContainerInfoType>`
     padding-bottom: 80px;
 
     @media only screen and (max-width: 800px) {
-        width: 800px;
         height: ${ props => props.heightmob ? props.heightmob : ''};
         flex-direction: column;
         padding-bottom: 0px;
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px;
         height: ${ props => props.heightmob ? props.heightmob : ''};
     }
 `;
@@ -107,7 +105,7 @@ export const MainContainerInfo = styled.div<MainContainerInfoType>`
     gap: ${ props => props.gap ? props.gap : '0px'};
     
     @media only screen and (max-width: 800px) {
-        width: 800px;
+        width: 100%;
         height: ${ props => props.heightmob ? props.heightmob : ''};
         flex-direction: column; 
         align-items: ${ props => props.alignitemsmob ? props.alignitemsmob : 'center'};        
@@ -116,7 +114,7 @@ export const MainContainerInfo = styled.div<MainContainerInfoType>`
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px;
+        width: 100%;
     }
 `;
 
@@ -131,7 +129,6 @@ export const TextContainer = styled.div<TextContainerType>`
     padding-right: ${ props => props.paddingright ? props.paddingright : ''};
 
     @media only screen and (max-width: 800px) {
-        width: 800px;
         height: ${ props => props.heightmob ? props.heightmob : ''};
         align-items: center;
         text-align: center;
@@ -139,7 +136,6 @@ export const TextContainer = styled.div<TextContainerType>`
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px; 
         padding: 0px;           
     }
 `;
@@ -186,7 +182,7 @@ export const ImagePrevContainer = styled.div<ImagePrevContainerType>`
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px;
+        width: 100%;
     }
 `;
 
@@ -195,7 +191,7 @@ export const ImagePrev = styled.img<ImagePrevType>`
     height: ${props => props.height ? props.height : ''};   
     
     @media only screen and (max-width: 400px) {
-        width: 380px;        
+        width: 80%;        
     }
 `;
 
@@ -206,7 +202,7 @@ export const ImageBannerContainer = styled.div<ImageBannerContainerType>`
     width: 1440px;     
     
     @media only screen and (max-width: 800px) {
-        width: 800px;
+        width: 100%;
         padding: 0px; 
         justify-content: ${props => props.justifycontentmob ? props.justifycontentmob : 'center'};
         align-items: ${props => props.alignitemsmob ? props.alignitemsmob : 'center'};
@@ -215,7 +211,7 @@ export const ImageBannerContainer = styled.div<ImageBannerContainerType>`
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px;                
+        width: 100%;                
     }
 `;
 
@@ -224,11 +220,12 @@ export const ImageBanner = styled.img<ImageBannerType>`
     height: ${props => props.height ? props.height : ''};     
     
     @media only screen and (max-width: 800px) {
-        width: ${props => props.widthmog ? props.widthmog : '800px'};;        
+        width: ${props => props.widthmog ? props.widthmog : '100%'}; 
+        height: ${props => props.heightmob ? props.heightmob : ''};;        
     }
     
     @media only screen and (max-width: 400px) {
-        width: ${props => props.widthmog ? props.widthmog : '400px'}; 
+        width: ${props => props.widthmog ? props.widthmog : '100%'}; 
     }   
 `;
 
