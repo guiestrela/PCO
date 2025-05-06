@@ -11,7 +11,7 @@ function SectionInfo() {
     return (
         <>
             <MasterContainerInfo>
-                <MainContainerInfo backgroundimage={ImgBackCircle} height="673px" heightmob="900px"> 
+                <MainContainerInfo backgroundimage={ImgBackCircle} height="673px" heightmob="700px"> 
                     <TextContainer paddingleft="80px">
                         <TituloInfo fontsize="68px" fontweight="400" color="#1B2F76" fontsizemob="62px">
                             Conheça o Grupo Pão com Ovo
@@ -27,8 +27,8 @@ function SectionInfo() {
             </MasterContainerInfo>
 
             <MasterContainerInfo>
-                <MainContainerInfo height="551px">
-                <MainContainerInfo height="551px" heightmob="800px" backgroundcolor="#FFC13A" borderradius="78px" gap="15px">
+                <MainContainerInfo height="551px"heightmob="750px">
+                <MainContainerInfo height="551px" heightmob="750px" backgroundcolor="#FFC13A" borderradius="78px" gap="15px">
                         <ImageBannerContainer justifycontent="end"  alignitemsmob="center">
                             <ImageBanner src={QrCode} widthmog="300px"/>
                         </ImageBannerContainer>
