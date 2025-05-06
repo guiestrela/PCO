@@ -66,11 +66,11 @@ export const FooterMainContainer = styled.header<FooterMainContainerType>`
     background-color: ${ props => props.backgroundcolor ? props.backgroundcolor : 'transparent'}; 
     
     @media only screen and (max-width: 800px) {
-        width: 800px;                
+        width: 100%;                
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px;
+        width: 100%;
         
                             
     }
@@ -90,7 +90,7 @@ export const FooterContainer = styled.div<FooterContainerType>`
     padding-left: ${ props => props.paddingleft ? props.paddingleft : ''};
 
     @media only screen and (max-width: 400px) {
-        width: 400px; 
+        width: 100%; 
         height: 500px;
         flex-direction: column;  
         align-items: center;
@@ -120,8 +120,7 @@ export const SocialIcon = styled.img<SocialIconType>`
     width: ${ props => props.width ? props.width : ''};   
     margin-left: ${ props => props.marginleft ? props.marginleft : ''};
     height: ${ props => props.height ? props.height : ''};
-    cursor: pointer;    
-   
+    cursor: pointer;  
 `;
 
 export const TextContainer = styled.div<TextContainerType>`
