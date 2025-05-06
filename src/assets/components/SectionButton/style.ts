@@ -10,12 +10,12 @@ export const MasterContainerButton = styled.div`
     align-items: center;  
     
     @media only screen and (max-width: 800px) {
-        width: 800px;
+        
         height: 300px;   
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px;
+        
         height: 300px;   
     }
 `;
@@ -27,14 +27,14 @@ export const MainContainerButton = styled.div`
     align-items: center;
 
     @media only screen and (max-width: 800px) {
-        width: 800px;
+        width: 100%;
         height: 250px;
         flex-direction: column;        
         justify-content: center;
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px;     
+        width: 100%;     
     }
 `;
 
