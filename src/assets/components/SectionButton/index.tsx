@@ -9,7 +9,7 @@ function SectionButton() {
             <MainContainerButton>
                 <ContainerButton flex={1} paddingleft="80px"  justifycontent="flex-start">
                     <Button borderradius="15px" border="solid 3px #023D69" widthtotal="500px" widthtmob="100%" 
-                    heighttotal="86px" fontsize="19px" 
+                    heighttotal="86px" fontsize="18px" 
                     backgroundColor="transparent" color="#023D69"
                     
                     onClick={function (): void {
@@ -19,7 +19,7 @@ function SectionButton() {
                 </ContainerButton>
                 <ContainerButton flex={1} paddingright="80px" justifycontent="flex-end">
                     <Button borderradius="15px" border="solid 3px #023D69" widthtotal="500px" widthtmob="100%" 
-                    heighttotal="86px" fontsize="19px"
+                    heighttotal="86px" fontsize="18px"
                     backgroundColor="transparent" color="#023D69"  
                     onClick={function (): void {
                             throw new Error("Function not implemented.");
