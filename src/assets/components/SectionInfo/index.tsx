@@ -11,7 +11,7 @@ function SectionInfo() {
     return (
         <>
             <MasterContainerInfo>
-                <MainContainerInfo backgroundimage={ImgBackCircle} height="673px" heightmob="800px"> 
+                <MainContainerInfo backgroundimage={ImgBackCircle} height="673px" heightmob="700px"> 
                     <TextContainer paddingleft="80px">
                         <TituloInfo fontsize="68px" fontweight="400" color="#1B2F76">
                             Conheça o Grupo Pão com Ovo
