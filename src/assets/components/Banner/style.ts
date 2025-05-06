@@ -26,13 +26,12 @@ export const BannerContainer = styled.div`
     background-image: linear-gradient(to right,  #023D69, #0055A5 40%,  #F5C766); 
     
     @media only screen and (max-width: 800px) {
-        width: 800px;
+        width: 100%;
         height: 1600px;
         flex-direction: column;
     }
     
     @media only screen and (max-width: 400px) {
-        width: 400px; 
         height: 1700px;        
     }
 `;
@@ -50,8 +49,7 @@ export const ImageContainer = styled.div`
         align-items: center;
     }
 
-    @media only screen and (max-width: 800px) {
-        width: 400px;
+    @media only screen and (max-width: 400px) {
         height: 300px;
     }
 `;
@@ -91,7 +89,7 @@ export const BannerTextContainer = styled.div`
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px;
+        width: 100%;
     }
 `;
 
