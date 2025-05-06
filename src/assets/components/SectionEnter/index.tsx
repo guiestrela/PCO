@@ -109,7 +109,7 @@ function SectionEnter() {
                             <ContainerColumn>
                             <ContainerImage gap="20px">
                                 <ImageEnder src={comoAjudar} width="564.26px"
-                                height="540.61px" widthmob="380px" heightmob="380px"/>                               
+                                height="540.61px" widthmob="90%" heightmob="90%"/>                               
                             </ContainerImage>
                         </ContainerColumn>
                     </ContainerEnter>
@@ -120,7 +120,7 @@ function SectionEnter() {
                         <ContainerColumn>
                             <ContainerImage >
                                 <ImageEnder src={fotoElipse} width="500px"
-                                height="500px" widthmob="380px" heightmob="380px"
+                                height="500px" widthmob="90%" heightmob="90%"
                                 />                               
                             </ContainerImage>
                         </ContainerColumn>
@@ -156,7 +156,7 @@ function SectionEnter() {
                             <ContainerColumn>
                             <ContainerImage gap="20px" paddingbottom="140px" paddingleft="40px">
                                 <ImageEnder src={facaParte} width="564.26px"
-                                height="540.61px" widthmob="380px" heightmob="380px"/>                               
+                                height="540.61px" widthmob="90%" heightmob="90%"/>                               
                             </ContainerImage>
                         </ContainerColumn>
                     </ContainerEnter>
@@ -167,7 +167,7 @@ function SectionEnter() {
                         <ContainerColumn>
                             <ContainerImage >
                                 <ImageEnder src={whatsapp} width="500px"
-                                height="500px" widthmob="380px" heightmob="380px"
+                                height="500px" widthmob="90%" heightmob="90%"
                                 />                               
                             </ContainerImage>
                         </ContainerColumn>
