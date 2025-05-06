@@ -71,7 +71,7 @@ function SectionEnter() {
                             <ContainerColumn>
                             <ContainerImage gap="20px">
                                 <ImageEnder src={foto05} width="722px"
-                                height="100%"/>                               
+                                height="100%" widthmob="90%"/>                               
                             </ContainerImage>
                         </ContainerColumn>
                     </ContainerEnter>
