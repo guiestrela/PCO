@@ -52,6 +52,9 @@ interface TextInfoType {
     fontfamily?: string
     fontsize?: string
     fontweight?: string
+
+    fontsizemob?: string
+    fontweightmob?: string
 }
 
 interface ImageBannerType {
@@ -165,7 +168,13 @@ export const TextInfo = styled.p<TextInfoType>`
     font-family: 'Poppins', sans-serif;
     font-size: ${props => props.fontsize ? props.fontsize : '28px'};
     font-weight: ${props => props.fontweight ? props.fontweight : '300'};
-    color: ${props => props.color ? props.color : '#000000'};        
+    color: ${props => props.color ? props.color : '#000000'};  
+    
+    @media only screen and (max-width: 600px) {
+        text-align: center;
+        font-size: ${props => props.fontsizemob ? props.fontsizemob : '30px'};
+        font-weight: ${props => props.fontweightmob ? props.fontweightmob : '600'};
+    }
 `;
 
 export const ImagePrevContainer = styled.div<ImagePrevContainerType>`

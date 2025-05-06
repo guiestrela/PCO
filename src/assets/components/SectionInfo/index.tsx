@@ -37,7 +37,7 @@ function SectionInfo() {
                                 Distribua<br/> 
                             solidarieade
                             </TituloInfo>
-                            <TextInfo color="#1B2F76">
+                            <TextInfo fontsizemob="25px" color="#1B2F76">
                             Contribua com qualquer valor
                             </TextInfo>
                         </TextContainer>
