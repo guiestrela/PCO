@@ -23,6 +23,8 @@ interface  TextContainerType {
     heightmob?: string
     justifycontent?: string
     alignitems?: string
+
+    heightmob400?: string
 }
 
 interface  ImagePrevContainerType {
@@ -142,7 +144,8 @@ export const TextContainer = styled.div<TextContainerType>`
     }
 
     @media only screen and (max-width: 400px) {
-        padding: 0px;           
+        padding: 0px; 
+        height: ${ props => props.heightmob400 ? props.heightmob400 : ''};          
     }
 `;
 

@@ -46,15 +46,15 @@ function SectionInfo() {
             </MasterContainerInfo>
                         
             <MasterContainerInfo heightmob="1000px">
-                <MainContainerInfo backgroundcolor='#FFF1D6' height="673px" heightmob="1100px"> 
+                <MainContainerInfo backgroundcolor='#FFF1D6' height="673px" heightmob="850px"> 
                     <ImagePrevContainer paddingleft="80px">
                         <ImagePrev src={MapaDf} width=""/>
                     </ImagePrevContainer>
-                    <TextContainer paddingright="80px" paddingleft="15px">
+                    <TextContainer heightmob400="100%" paddingright="80px" paddingleft="15px">
                         <TituloInfo fontsize="68px" fontweight="700" color="#1B2F76">
                             Como Funciona a ação?
                         </TituloInfo>
-                        <TextInfo>
+                        <TextInfo fontweightmob="500">
                         As ações do Pão com Ovo ocorrem duas vezes por mês, sempre às sextas-feiras. Cada ação inclui duas rotas cuidadosamente planejadas com antecedência. Uma rota cobre as áreas de Taguatinga e Ceilândia, enquanto a outra se dirige ao Plano Piloto.
                         </TextInfo>
                     </TextContainer>
