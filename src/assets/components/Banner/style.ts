@@ -8,13 +8,11 @@ export const MainContainer = styled.header`
     align-items: center;
 
     @media only screen and (max-width: 800px) {
-        
         height: 900px;
         flex-direction: column;
     }
 
     @media only screen and (max-width: 400px) {
-        
         height: 650px;
         
     }
