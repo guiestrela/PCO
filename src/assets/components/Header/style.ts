@@ -13,7 +13,7 @@ export const HeaderMainContainer = styled.header`
     }
 
     @media screen and (max-width: 400px) {
-        width: 400px;
+        width: 100%;
         height: 100%;
     
     }
