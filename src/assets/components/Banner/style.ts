@@ -8,15 +8,15 @@ export const MainContainer = styled.header`
     align-items: center;
 
     @media only screen and (max-width: 800px) {
-        width: 100%;
+        
         height: 900px;
         flex-direction: column;
     }
 
     @media only screen and (max-width: 400px) {
-        width: 100%;
+        
         height: 650px;
-        flex-direction: column;
+        
     }
 `;
 
