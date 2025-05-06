@@ -1,33 +1,28 @@
-import { 
-    HeaderMainContainer, 
-    HeaderContainer, 
-    LogoContainer, 
-    LogoHeader, 
-    SocialContainer, 
-    SocialIcon 
-} 
-from "./style";
+import { DivFlex, DivFlexLogo, Img } from "../../../uiKit";
 
-import Logo from "../../icons/logoHeader.svg";
-import Instagram from "../../icons/instagramHeader.svg";
-import Whatsapp from "../../icons/whatsappHeader.svg";
-import Facebook from "../../icons/fbHeader.svg";
+import logo from "../../icons/logoHeader.svg";
+import instagram from "../../icons/instagramHeader.svg";
+import whatsapp from "../../icons/whatsappHeader.svg";
+import facebook from "../../icons/fbHeader.svg";
+
 
 
 function header() {
     return (
-        <HeaderMainContainer>
-            <HeaderContainer>
-                <LogoContainer>
-                    <LogoHeader src={Logo} alt="Logo" />
-                </LogoContainer>
-                <SocialContainer>
-                    <SocialIcon src={Instagram} alt="instagram"/>
-                    <SocialIcon src={Whatsapp} alt="whatsapp"/>
-                    <SocialIcon src={Facebook} alt="Facebook"/>
-                </SocialContainer>
-            </HeaderContainer>
-        </HeaderMainContainer>
+        <>
+        <DivFlex width="100%" height="200px" alignitems="center" justifycontent="center">
+            <DivFlex width="1440px" height="100%" backgroundColor="#FFFFFF" justifycontent="space-between" alignitems="center">
+                <DivFlexLogo paddingleft="80px" justifycontent="center" alignitems="center" paddingTotalmob="0px">
+                    <Img src={logo} widthmob="80%"/>
+                </DivFlexLogo>
+                <DivFlexLogo justifycontent="center" alignitems="center" paddingright="80px" paddingtop="70px" paddingTotalmob="0px">
+                    <Img src={instagram} />
+                    <Img src={whatsapp} />
+                    <Img src={facebook} />
+                </DivFlexLogo>
+            </DivFlex>
+        </DivFlex>
+        </>
     );
 }
 export default header;
