@@ -13,7 +13,7 @@ export const MasterContainerButton = styled.div`
         height: 300px;   
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         height: 300px;   
     }
 `;
@@ -31,7 +31,7 @@ export const MainContainerButton = styled.div`
         justify-content: center;
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 100%;     
     }
 `;

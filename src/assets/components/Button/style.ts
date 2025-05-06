@@ -73,7 +73,7 @@ export const Button = styled.button<ButtonType>`
     text-align: ${props => props.textalign ? props.textalign : ""};
     cursor: pointer; 
     
-    @media only screen and (max-width: 450px) {       
+    @media only screen and (max-width: 480px) {       
         width: ${props => props.widthtmob ? props.widthtmob : ""};
         height: ${props => props.heightmob ? props.heightmob : ""};
         font-size: ${props => props.fontsizemob ? props.fontsizemob : ""};

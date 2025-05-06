@@ -77,7 +77,7 @@ export const MasterContainerEnter = styled.div`
         width: 100%;     
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 100%;        
     }
     
@@ -93,7 +93,7 @@ export const MainContainerEnter = styled.div<MainContainerEnterType>`
     background-color: ${ props  => props.backgroundcolor ? props.backgroundcolor : 'transparent'};
     
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 100%;
         height: ${ props => props.heightmob ? props.heightmob : '1661px'};
     }
@@ -113,7 +113,7 @@ export const ContainerEnter = styled.div<ContainerEnterType>`
         flex-direction: column;        
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 100%;        
     }
 `;
@@ -138,7 +138,7 @@ export const TextContainer = styled.div<TextContainerType>`
         padding-right: 0;
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 100%;
     }
 `;
@@ -157,7 +157,7 @@ export const TituloInfo = styled.h1<TituloInfoType>`
 ;
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 100%;        
 }
 `;
@@ -174,7 +174,7 @@ export const TextInfo = styled.p<TextInfoType>`
         text-align: center;
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 100%;       
     }
 `;
@@ -201,7 +201,7 @@ export const ContainerImage = styled.div<ContainerImageType>`
         padding-right: 0;
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 100%;        
     }
 `;
@@ -232,7 +232,7 @@ export const ContainerColumn = styled.div<ContainerColumnType>`
         flex-direction: ${ props => props.flexdirectionmob ? props.flexdirectionmob : ''};
     };
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 100%;        
     };
     

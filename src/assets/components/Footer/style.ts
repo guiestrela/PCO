@@ -69,7 +69,7 @@ export const FooterMainContainer = styled.header<FooterMainContainerType>`
         width: 100%;                
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 100%;
         
                             
@@ -89,7 +89,7 @@ export const FooterContainer = styled.div<FooterContainerType>`
     padding-right: ${ props => props.paddingright ? props.paddingright : ''};
     padding-left: ${ props => props.paddingleft ? props.paddingleft : ''};
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 100%; 
         height: 500px;
         flex-direction: column;  
@@ -134,7 +134,7 @@ export const TextContainer = styled.div<TextContainerType>`
     gap: ${ props => props.gap ? props.gap : '20px'};
     width: 100%;
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         justify-content: center;
         align-items: center; 
         text-align: center;               
@@ -149,7 +149,7 @@ export const TituloInfo = styled.h1<TituloInfoType>`
     color: ${props => props.color ? props.color : ''};
     text-align: ${props => props.textalign ? props.textalign : 'center'};  
     
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         font-size: 20px;
         text-align: center;                
     }
@@ -163,7 +163,7 @@ export const TextInfo = styled.p<TextInfoType>`
     text-align: ${props => props.textalign ? props.textalign : 'center'};
     padding-top: ${ props => props.paddingtop ? props.paddingtop : ''};
     
-    @media only screen and (max-width: 450px) {        
+    @media only screen and (max-width: 480px) {        
         text-align: center;                
     }
 `;

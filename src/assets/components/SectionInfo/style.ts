@@ -93,7 +93,7 @@ export const MasterContainerInfo = styled.div<MasterContainerInfoType>`
         padding-bottom: 0px;
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         height: ${ props => props.heightmob ? props.heightmob : ''};
     }
 `;
@@ -121,7 +121,7 @@ export const MainContainerInfo = styled.div<MainContainerInfoType>`
         gap: 0px;
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 100%;
     }
 `;
@@ -143,7 +143,7 @@ export const TextContainer = styled.div<TextContainerType>`
         padding-bottom: 90px;
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         padding: 0px; 
         height: ${ props => props.heightmob400 ? props.heightmob400 : ''};          
     }
@@ -160,7 +160,7 @@ export const TituloInfo = styled.h1<TituloInfoType>`
         
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         text-align: center;
         font-size: ${props => props.fontsizemob ? props.fontsizemob : '30px'};
         font-weight: ${props => props.fontweightmob ? props.fontweightmob : '600'};
@@ -173,7 +173,7 @@ export const TextInfo = styled.p<TextInfoType>`
     font-weight: ${props => props.fontweight ? props.fontweight : '300'};
     color: ${props => props.color ? props.color : '#000000'};  
     
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         text-align: center;
         font-size: ${props => props.fontsizemob ? props.fontsizemob : '30px'};
         font-weight: ${props => props.fontweightmob ? props.fontweightmob : '600'};
@@ -198,7 +198,7 @@ export const ImagePrevContainer = styled.div<ImagePrevContainerType>`
         justify-content: start;        
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 100%;
     }
 `;
@@ -207,7 +207,7 @@ export const ImagePrev = styled.img<ImagePrevType>`
     width: ${props => props.width ? props.width : ''};
     height: ${props => props.height ? props.height : ''};   
     
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 90%;        
     }
 `;
@@ -227,7 +227,7 @@ export const ImageBannerContainer = styled.div<ImageBannerContainerType>`
         flex-direction: column;
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: 100%;                
     }
 `;
@@ -241,7 +241,7 @@ export const ImageBanner = styled.img<ImageBannerType>`
         height: ${props => props.heightmob ? props.heightmob : ''};;        
     }
     
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 480px) {
         width: ${props => props.widthmog ? props.widthmog : '100%'}; 
     }   
 `;

@@ -12,7 +12,7 @@ export const HeaderMainContainer = styled.header`
         width: 800px;
     }
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 480px) {
         width: 100%;
         height: 100%;
     }
@@ -30,7 +30,7 @@ export const HeaderContainer = styled.div`
         width: 800px;
     }
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 480px) {
         width: 100%;
         height: 100%;
     }
@@ -46,7 +46,7 @@ export const LogoContainer = styled.div`
         margin-left: 0px;
     }
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 480px) {
         margin-left: 0px; 
         align-items: center;
         justify-content: center;
@@ -57,7 +57,7 @@ export const LogoContainer = styled.div`
 export const LogoHeader = styled.img`
     width: 235px;
     
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 480px) {
         width: 150px;
     
     }
@@ -76,7 +76,7 @@ export const SocialContainer = styled.div`
         margin-right: 40px;       
     }
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 480px) {
         margin-right: 20px;     
     }
 `;
@@ -86,7 +86,7 @@ export const SocialIcon = styled.img`
     margin-left: 2px;
     cursor: pointer;
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 480px) {
         width: 40px;    
     }
 `;
