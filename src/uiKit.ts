@@ -163,7 +163,12 @@ interface ContainerButtonType {
     paddingright?: string
     flexdirection?: string
     gap?: string
-    alignitems?: string   
+    alignitems?: string 
+    marginleft?: string
+    marginright?: string
+    width?: string
+
+    //
     
     //mobile
 
@@ -173,6 +178,11 @@ interface ContainerButtonType {
     paddingrightmob?:string
     paddingtopmob?:string
     paddingbottommob?:string
+    marginleftmob?: string
+    marginrightmob?: string
+    flexdirectionmob?: string
+    gapmob?: string
+
 }
 
 
@@ -190,6 +200,7 @@ interface ButtonType {
     margintop?: string
     justifycontent?: string
     alignitems?: string
+    
 
     //mobile
 
@@ -333,7 +344,8 @@ export const DivFlexLogo = styled.div<DivFlexLogoType>`
 `
 export const ContainerButton = styled.div<ContainerButtonType>`
     display: flex;
-    width: 100%;
+    width: ${props => props.width ? props.width : ""};
+    
     flex: ${props => props.flex ? props.flex : ""};    
     justify-content: ${props => props.justifycontent ? props.justifycontent : ""};
     padding-left: ${props => props.paddingleft ? props.paddingleft : ""}; 
@@ -341,6 +353,9 @@ export const ContainerButton = styled.div<ContainerButtonType>`
     padding-top: ${props => props.paddingtop ? props.paddingtop : ""};
     padding-bottom: ${props => props.paddingbottom ? props.paddingbottom : ""};
     flex-direction: ${props => props.flexdirection ? props.flexdirection : ""};
+    margin-left: ${props => props.marginleft ? props.marginleft : ""};
+    margin-right: ${props => props.marginright ? props.marginright : ""};
+
     gap: ${props => props.gap ? props.gap : ""};
     align-items: ${props => props.alignitems ? props.alignitems : ""};
 
@@ -351,9 +366,12 @@ export const ContainerButton = styled.div<ContainerButtonType>`
         padding-bottom: ${props => props.paddingbottommob ? props.paddingbottommob : ""};
         justify-content: ${props => props.justifycontentmob ? props.justifycontentmob : ""};
         align-items: ${props => props.alignitemsmob ? props.alignitemsmob : ""};
-    
-    }
+        margin-left: ${props => props.marginleftmob ? props.marginleftmob : ""};
+        margin-right: ${props => props.marginrightmob ? props.marginrightmob : ""};
+        flex-direction: ${props => props.flexdirectionmob ? props.flexdirectionmob : ""};
+        gap: ${props => props.gapmob ? props.gapmob : ""};
 
+    }
 `;
 
 export const Button = styled.button<ButtonType>`
