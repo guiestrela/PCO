@@ -10,12 +10,10 @@ export const MasterContainerButton = styled.div`
     align-items: center;  
     
     @media only screen and (max-width: 800px) {
-        
         height: 300px;   
     }
 
     @media only screen and (max-width: 450px) {
-        
         height: 300px;   
     }
 `;

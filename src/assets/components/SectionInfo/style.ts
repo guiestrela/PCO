@@ -207,7 +207,7 @@ export const ImagePrev = styled.img<ImagePrevType>`
     width: ${props => props.width ? props.width : ''};
     height: ${props => props.height ? props.height : ''};   
     
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 450px) {
         width: 90%;        
     }
 `;

@@ -20,7 +20,7 @@ function SectionInfo() {
                         O Pão com Ovo é um projeto social destinado a levar alento à pessoas em situação de rua, no Distrito Federal. Nasceu da vontade de  uma família manauara em fazer algo por  essas pessoas, muitas vezes invisíveis
                         </TextInfo>                        
                     </TextContainer>
-                    <ImagePrevContainer paddingright="80px" >
+                    <ImagePrevContainer paddingright="70px" >
                         <ImagePrev src={PrevVideo} />
                     </ImagePrevContainer>
                 </MainContainerInfo>                

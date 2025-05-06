@@ -8,7 +8,7 @@ export const MainContainer = styled.header`
     align-items: center;
 
     @media only screen and (max-width: 800px) {
-        height: 900px;
+        height: 100%;
         flex-direction: column;
     }
 
@@ -86,10 +86,6 @@ export const BannerTextContainer = styled.div`
         align-items: center; 
         padding-left: 0px;
         padding-top: 50px;
-    }
-
-    @media only screen and (max-width: 450px) {
-        width: 100%;
     }
 `;
 
