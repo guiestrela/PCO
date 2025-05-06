@@ -43,10 +43,10 @@ function SectionEnter() {
                         </MainContainerImage>  
                     </ContainerColumn>
                     <ContainerButton flexdirection="column" justifycontent="center" paddingtop="80px" paddingbottom="70px" gap="40px" alignitems="center">
-                        <Button fontsizemob="30px" widthtmob="100%" border="solid 2px #023D69" borderradius="12px" widthtotal="543px" heighttotal="66px" fontsize="40px" color="#0C3077">
+                        <Button fontsizemob="30px" widthtmob="80%" border="solid 2px #023D69" borderradius="12px" widthtotal="543px" heighttotal="66px" fontsize="40px" color="#0C3077">
                             Acompanhe nossas ações
                         </Button>
-                        <Button fontsizemob="30px" widthtmob='100%' border="solid 2px #023D69" borderradius="12px" widthtotal="543px" heighttotal="66px" fontsize="40px" color="#0C3077">
+                        <Button fontsizemob="30px" widthtmob='80%' border="solid 2px #023D69" borderradius="12px" widthtotal="543px" heighttotal="66px" fontsize="40px" color="#0C3077">
                             Seja um voluntário
                         </Button>
                     </ContainerButton>
@@ -63,7 +63,7 @@ function SectionEnter() {
                                 </TextInfo>
                             </TextContainer>
                             <ContainerButton justifycontent="start" alignitems="start" paddingleft="20px">
-                                <Button fontsizemob="28px" widthtmob="100%" border="solid 2px #FFDF78" borderradius="12px" widthtotal="543px" heighttotal="66px" fontsize="40px" color="#0C3077" backgroundColor="#FFDF78">
+                                <Button fontsizemob="28px" widthtmob="80%" border="solid 2px #FFDF78" borderradius="12px" widthtotal="543px" heighttotal="66px" fontsize="40px" color="#0C3077" backgroundColor="#FFDF78">
                                 Siga nosso Instagram! 
                                 </Button>                                
                             </ContainerButton>
@@ -84,7 +84,7 @@ function SectionEnter() {
                                             e honestidade
                         </TituloInfo>
                         <ContainerButton justifycontent="center" alignitems="center" paddingtop="40px">
-                                <Button border="solid 2px #FFDF78" borderradius="24px" widthtotal="760px" heighttotal="99px" fontsize="30px" color="#263238" backgroundColor="#FFDF78" fontsizemob="25px" widthtmob="100%">
+                                <Button border="solid 2px #FFDF78" borderradius="24px" widthtotal="760px" heighttotal="99px" fontsize="30px" color="#263238" backgroundColor="#FFDF78" fontsizemob="25px" widthtmob="80%">
                                 Confira aqui a prestação de contas do projeto 
                                 </Button>                                
                             </ContainerButton>                        
@@ -101,7 +101,7 @@ function SectionEnter() {
                                 </TextInfo>
                             </TextContainer>
                             <ContainerButton justifycontent="start" alignitems="start" paddingleft="80px">
-                                <Button widthtmob="100%" border="solid 2px #FFDF78" borderradius="24px" widthtotal="500px" heighttotal="99px" fontsize="40px" color="#0C3077" backgroundColor="#FFDF78">
+                                <Button widthtmob="80%" border="solid 2px #FFDF78" borderradius="24px" widthtotal="500px" heighttotal="99px" fontsize="40px" color="#0C3077" backgroundColor="#FFDF78">
                                 Saiba como ajudar 
                                 </Button>                                
                             </ContainerButton>
@@ -132,7 +132,7 @@ function SectionEnter() {
                                 </TextInfo>
                             </TextContainer>
                             <ContainerButton justifycontent="start" alignitems="start" paddingright="170px">
-                                <Button widthtmob="100%" border="solid 2px #EEC93D" borderradius="4px" widthtotal="500px" heighttotal="63px" fontsize="28px" color="#021639" backgroundColor="#EEC93D">
+                                <Button widthtmob="80%" border="solid 2px #EEC93D" borderradius="4px" widthtotal="500px" heighttotal="63px" fontsize="28px" color="#021639" backgroundColor="#EEC93D">
                                 Acompanhe a evolução do projeto 
                                 </Button>                                
                             </ContainerButton>
@@ -148,7 +148,7 @@ function SectionEnter() {
                                 </TituloInfo>                                
                             </TextContainer>
                             <ContainerButton justifycontent="start" alignitems="start" paddingleft="80px" paddingtop="40px">
-                                <Button widthtmob="100%" border="solid 2px #023D69" borderradius="24px" widthtotal="500px" heighttotal="83px" fontsize="38px" color="#FFFFFF" backgroundColor="#023D69">
+                                <Button widthtmob="80%" border="solid 2px #023D69" borderradius="24px" widthtotal="500px" heighttotal="83px" fontsize="38px" color="#FFFFFF" backgroundColor="#023D69">
                                 Quero ser um doador 
                                 </Button>                                
                             </ContainerButton>
@@ -179,7 +179,7 @@ function SectionEnter() {
                             </TextContainer>
                             <ContainerButton justifycontent="start" alignitems="start"
                             paddingtop="40px">                          
-                                <Button widthtmob="100%" padding="0 5px 0 40px" textalign="center" alignitems="center" border="solid 2px #023D69" borderradius="15px" widthtotal="498px" heighttotal="104px" fontsize="28px" color="#FFFFFF" backgroundColor="#023D69">
+                                <Button widthtmob="80%" padding="0 5px 0 40px" textalign="center" alignitems="center" border="solid 2px #023D69" borderradius="15px" widthtotal="498px" heighttotal="104px" fontsize="28px" color="#FFFFFF" backgroundColor="#023D69">
                                 <img src={whatsappIcon} alt=""/>
                                 Faça parte do grupo de Whatsapp! 
                                 </Button>                                

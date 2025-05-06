@@ -16,7 +16,7 @@ function Banner() {
                             toda hora você<br/> recebe e doa.
                         </TextContainer>
                         <ContainerButton paddingtop="20px">
-                            <Button widthtmob="100%" fontsizemob="18px" borderradius="15px" border="none" widthtotal="240px" heighttotal="54px" fontsize="22px" color="#023D69"  onClick={function (): void {
+                            <Button widthtmob="80%" fontsizemob="18px" borderradius="15px" border="none" widthtotal="240px" heighttotal="54px" fontsize="22px" color="#023D69"  onClick={function (): void {
                                     throw new Error("Function not implemented.");
                                 } }>apoie o projeto</Button>
                         </ContainerButton>
