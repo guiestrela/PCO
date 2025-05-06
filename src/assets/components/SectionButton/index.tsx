@@ -9,9 +9,7 @@ function SectionButton() {
                 <ContainerButton paddingleft="80px"  justifycontent="flex-start" paddingleftmob="0" paddingbottommob="20px" justifycontentmob="center" alignitemsmob="center">
                     <Button justifycontent="center" alignitems="center" borderradius="15px" border="solid 3px #023D69" width="460px" height="86px" 
                     fontsize="18px" 
-                    backgroundColor="transparent" color="#023D69" widthmob="80%"
-                    
-                    onClick={function (): void {
+                    backgroundColor="transparent" color="#023D69" widthmob="80%"                                        onClick={function (): void {
                             throw new Error("Function not implemented.");
                         } }>confira as datas das próximas ações
                     </Button>
