@@ -27,6 +27,15 @@ export const HeaderContainer = styled.div`
     justify-content: space-between; 
     background-color: #FFFFFF;    
     
+    @media only screen and (max-width: 800px) {
+        width: 800px;
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 100%;
+        height: 100%;
+    
+    }
 `;
 
 export const LogoContainer = styled.div`
