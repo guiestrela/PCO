@@ -16,7 +16,7 @@ function SectionInfo() {
                         <TituloInfo fontsize="68px" fontweight="400" color="#1B2F76">
                             Conheça o Grupo Pão com Ovo
                         </TituloInfo>
-                        <TextInfo fontsizemob="25px" color="#1B2F76">
+                        <TextInfo fontsizemob="25px"  fontweightmob='400' color="#1B2F76">
                         O Pão com Ovo é um projeto social destinado a levar alento à pessoas em situação de rua, no Distrito Federal. Nasceu da vontade de  uma família manauara em fazer algo por  essas pessoas, muitas vezes invisíveis
                         </TextInfo>                        
                     </TextContainer>
