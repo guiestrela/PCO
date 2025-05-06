@@ -22,7 +22,7 @@ function Banner() {
                                 } }>apoie o projeto</Button>
                     </ContainerButton>
                     </DivFlex>
-                    <DivFlex flexdirection="column" paddingright="80px" paddingTotalmob="0" paddingTotal="20px 0 20px 0">
+                    <DivFlex paddingright="80px" paddingTotalmob="0" paddingTotal="20px 0 20px 0">
                         <DivFlexImage justifycontent="center" alignitems="start" alignitemsmob="center" paddingbottommob="20px">
                             <Img src={ImageBanner} widthmob="90%"/>
                         </DivFlexImage>
