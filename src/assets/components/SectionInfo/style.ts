@@ -42,6 +42,9 @@ interface TituloInfoType {
     fontfamily?: string
     fontsize?: string
     fontweight?: string
+
+    fontsizemob?: string
+    fontweightmob?: string
 }
 
 interface TextInfoType {
@@ -153,6 +156,8 @@ export const TituloInfo = styled.h1<TituloInfoType>`
 
     @media only screen and (max-width: 600px) {
         text-align: center;
+        font-size: ${props => props.fontsizemob ? props.fontsizemob : '30px'};
+        font-weight: ${props => props.fontweightmob ? props.fontweightmob : '600'};
     }
 `;
 

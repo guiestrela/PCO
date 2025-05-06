@@ -33,7 +33,7 @@ function SectionInfo() {
                             <ImageBanner src={QrCode} widthmog="300px"/>
                         </ImageBannerContainer>
                         <TextContainer heightmob="400px">
-                            <TituloInfo fontsize="68px" fontweight="700" color="#1B2F76">
+                            <TituloInfo fontsize="68px" fontweight="700" color="#1B2F76" fontsizemob="50px" fontweightmob="600">
                                 Distribua<br/> 
                             solidarieade
                             </TituloInfo>
