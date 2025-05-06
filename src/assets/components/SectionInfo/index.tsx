@@ -13,7 +13,7 @@ function SectionInfo() {
             <MasterContainerInfo>
                 <MainContainerInfo backgroundimage={ImgBackCircle} height="673px" heightmob="700px"> 
                     <TextContainer paddingleft="80px">
-                        <TituloInfo fontsize="68px" fontweight="400" color="#1B2F76">
+                        <TituloInfo fontsize="68px" fontweight="400" color="#1B2F76" fontsizemob="62px">
                             Conheça o Grupo Pão com Ovo
                         </TituloInfo>
                         <TextInfo fontsizemob="20px"  fontweightmob='400' color="#1B2F76">
