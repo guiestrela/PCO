@@ -28,17 +28,17 @@ function SectionEnter() {
                     <ContainerColumn flexdirectionmob="column">                      
                         <MainContainerImage>
                             <ContainerImage gap="13px">
-                                <ImageEnder src={foto01} width="500px"
-                                />400px
-                                <ImageEnder src={foto02} width="500px" />
+                                <ImageEnder src={foto01} width="500px" widthmob="90%"
+                                />
+                                <ImageEnder src={foto02} width="500px" widthmob="90%"/>
                             </ContainerImage>                        
                         </MainContainerImage> 
 
                         <MainContainerImage>
                             <ContainerImage gap="5px">
-                                <ImageEnder src={foto03} width="760px"
+                                <ImageEnder src={foto03} width="760px" widthmob="90%"
                                 />
-                                <ImageEnder src={foto04} width="760px" />
+                                <ImageEnder src={foto04} width="760px" widthmob="90%"/>
                             </ContainerImage>
                         </MainContainerImage>  
                     </ContainerColumn>

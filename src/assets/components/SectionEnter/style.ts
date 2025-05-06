@@ -218,7 +218,6 @@ export const ImageEnder = styled.img<ImageEnderType>`
 
 `;
 
-
 export const ContainerColumn = styled.div<ContainerColumnType>`
     display: flex;
     justify-content: center;
