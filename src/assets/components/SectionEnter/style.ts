@@ -74,11 +74,11 @@ export const MasterContainerEnter = styled.div`
     align-items: center; 
 
     @media only screen and (max-width: 800px) {
-        width: 800px;     
+        width: 100%;     
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px;        
+        width: 100%;        
     }
     
 `;
@@ -94,7 +94,7 @@ export const MainContainerEnter = styled.div<MainContainerEnterType>`
     
 
     @media only screen and (max-width: 400px) {
-        width: 400px;
+        width: 100%;
         height: ${ props => props.heightmob ? props.heightmob : '1661px'};
     }
 `;
@@ -108,13 +108,13 @@ export const ContainerEnter = styled.div<ContainerEnterType>`
     background-color: ${ props  => props.backgroundcolor ? props.backgroundcolor : 'transparent'};
 
     @media only screen and (max-width: 800px) {
-        width: 800px;
+        width: 100%;
         height: ${ props => props.heightmob ? props.heightmob : '1661px'};
         flex-direction: column;        
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px;        
+        width: 100%;        
     }
 `;
 
@@ -131,7 +131,7 @@ export const TextContainer = styled.div<TextContainerType>`
 
 
     @media only screen and (max-width: 800px) {
-        width: 800px;
+        width: 100%;
         justify-content: center;
         align-items: center; 
         padding-left: 0;
@@ -139,7 +139,7 @@ export const TextContainer = styled.div<TextContainerType>`
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px;
+        width: 100%;
     }
 `;
 
@@ -151,14 +151,14 @@ export const TituloInfo = styled.h1<TituloInfoType>`
     text-align: ${props => props.textalign ? props.textalign : 'center'};  
     
     @media only screen and (max-width: 800px) {
-        width: 800px;        
+        width: 100%;        
         text-align: center;
         font-size: ${props => props.fontsizemob ? props.fontsizemob : '30px'};
 ;
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px;        
+        width: 100%;        
 }
 `;
 
@@ -170,12 +170,12 @@ export const TextInfo = styled.p<TextInfoType>`
     text-align: ${props => props.textalign ? props.textalign : 'center'};
 
     @media only screen and (max-width: 800px) {
-        width: 800px;        
+        width: 100%;        
         text-align: center;
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px;       
+        width: 100%;       
     }
 `;
 
@@ -196,13 +196,13 @@ export const ContainerImage = styled.div<ContainerImageType>`
     padding-left: ${ props => props.paddingleft ? props.paddingleft : ''};
     
     @media only screen and (max-width: 800px) {
-        width: 800px;        
+        width: 100%;        
         padding-left: 0;
         padding-right: 0;
     }
 
     @media only screen and (max-width: 400px) {
-        width: 400px;        
+        width: 100%;        
     }
 `;
 
@@ -229,12 +229,12 @@ export const ContainerColumn = styled.div<ContainerColumnType>`
     gap: 20px;
 
     @media only screen and (max-width: 800px) {
-        width: 800px;
+        width: 100%;
         flex-direction: ${ props => props.flexdirectionmob ? props.flexdirectionmob : ''};
     };
 
     @media only screen and (max-width: 400px) {
-        width: 400px;        
+        width: 100%;        
     };
     
 `
