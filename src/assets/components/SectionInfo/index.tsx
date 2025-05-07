@@ -40,10 +40,11 @@ function SectionInfo() {
                             <Img src={qrcode} />
                         </DivFlexImage>
 
-                        <DivContainerText flexdirection="column" alignitems="start" justifycontent="center"                         
+                        <DivContainerText flexdirection="column" alignitems="start" justifycontent="center" widthmob="100%" heightmob="100%" 
+                        justifycontentmob="center" alignitemsmob="center"                        
                         
                         >
-                            <Title fontsize="69px" fontweight="700" color="#023D69" textalign="flex-start" fontsizemob="66px">
+                            <Title fontsize="69px" fontweight="700" color="#023D69" textalign="flex-start" fontsizemob="64px">
                             Distribua <br/> solidariedade
                             </Title>
                             <Text fontsize="24px" fontweight="700" color="#023D69" textalign="flex-start" fontsizemob="30px">
