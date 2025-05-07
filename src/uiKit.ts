@@ -19,6 +19,9 @@ interface DivFlexType {
     maxwidth?: string
     backgroundColor?: string
     backgroundimage?: string
+    backgroundrepeat?: string
+    backgroundposition?: string
+    backgroundsize?: string
 
 
     ///Mobile
@@ -262,7 +265,11 @@ export const DivFlex = styled.div<DivFlexType>`
     border-radius: ${props => props.borderradius ? props.borderradius : ""};
     gap: ${props => props.gap ? props.gap : ""};
     background-color: ${props => props.backgroundColor ? props.backgroundColor : ""};
-    background-image: ${props => props.backgroundimage ? props.backgroundimage : ""};;
+    background-image: ${props => props.backgroundimage ? props.backgroundimage : ""};
+    background-repeat: ${props => props.backgroundrepeat ? props.backgroundrepeat : ""};
+    background-position: ${props => props.backgroundposition ? props.backgroundposition : ""};
+    background-size: ${props => props.backgroundsize ? props.backgroundsize : ""};
+
     margin-top: ${props => props.margintop ? props.margintop : ""};
 
     @media only screen and (max-width: 580px) {
