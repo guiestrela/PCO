@@ -50,7 +50,6 @@ function SectionInfo() {
                             Contribua com qualquer valor
                             </Text>                 
                         </DivContainerText >
-
                     </DivFlex>
                 </DivFlex>
             </DivFlex>
