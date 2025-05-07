@@ -1,6 +1,6 @@
 import { Button, ContainerButton, DivContainerText, DivFlex, DivFlexImage, Img, Title } from "../../../uiKit";
 
-import ImageBanner from "../../images/fotoBanner01.png";
+import imageBanner from "../../images/fotoBanner01.png";
 
 function Banner() {
     return (
@@ -24,7 +24,7 @@ function Banner() {
                     </DivFlex>
                     <DivFlex paddingright="80px" paddingTotalmob="0" paddingTotal="20px 0 20px 0">
                         <DivFlexImage justifycontent="center" alignitems="start" alignitemsmob="center" paddingbottommob="20px">
-                            <Img src={ImageBanner} widthmob="90%"/>
+                            <Img src={imageBanner} widthmob="90%"/>
                         </DivFlexImage>
                     </DivFlex>                    
                 </DivFlex>
