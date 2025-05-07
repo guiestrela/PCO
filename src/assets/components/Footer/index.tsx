@@ -67,9 +67,7 @@ function Footer() {
                             <Text fontsize="20px" fontweight="500" color="#FFFFFF" textalign="end">
                             CEP: 70.762-540                           
                             </Text>
-                        </DivContainerText>
-
-                                            
+                        </DivContainerText>                                            
                         
                     </DivFlex>
 
