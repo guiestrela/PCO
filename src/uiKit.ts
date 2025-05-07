@@ -22,6 +22,10 @@ interface DivFlexType {
     backgroundrepeat?: string
     backgroundposition?: string
     backgroundsize?: string
+    margin?: string
+    marginleft?: string
+    marginright?: string
+    marginbottom?: string
 
 
     ///Mobile
@@ -32,7 +36,11 @@ interface DivFlexType {
     paddingTotalmob?: string
     bordermob?: string
     borderradiusmob?: string
+    marginmog?:string
     margintopmob?: string
+    marginleftmob?: string
+    marginrightmob?: string
+    marginbottommob?: string
     gapmob?: string
     paddingleftmob?: string
     paddingrightmob?: string
@@ -269,8 +277,13 @@ export const DivFlex = styled.div<DivFlexType>`
     background-repeat: ${props => props.backgroundrepeat ? props.backgroundrepeat : ""};
     background-position: ${props => props.backgroundposition ? props.backgroundposition : ""};
     background-size: ${props => props.backgroundsize ? props.backgroundsize : ""};
-
+    margin: ${props => props.margin ? props.margin : ""};
     margin-top: ${props => props.margintop ? props.margintop : ""};
+    margin-left: ${props => props.marginleft ? props.marginleft : ""};
+    margin-right: ${props => props.marginright ? props.marginright : ""};
+    margin-bottom: ${props => props.marginbottom ? props.marginbottom : ""};
+    
+
 
     @media only screen and (max-width: 580px) {
         width: 100%;
@@ -286,7 +299,11 @@ export const DivFlex = styled.div<DivFlexType>`
         border: ${props => props.bordermob ? props.bordermob : ""};
         border-radius: ${props => props.borderradiusmob ? props.borderradiusmob : ""};
         gap: ${props => props.gapmob ? props.gapmob : ""};
-        margin-top: ${props => props.margintopmob ? props.margintopmob : ""};    
+        margin-top: ${props => props.margintopmob ? props.margintopmob : ""};
+        margin-left: ${props => props.marginleftmob ? props.marginleftmob : ""};
+        margin-right: ${props => props.marginrightmob ? props.marginrightmob : ""};
+        margin-bottom: ${props => props.marginbottommob ? props.marginbottommob : ""};
+        margin: ${props => props.marginmog ? props.marginmog : ""};
     }    
 `;
 
