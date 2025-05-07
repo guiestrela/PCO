@@ -224,6 +224,20 @@ interface TitleType {
     textalignmob?: string
 }
 
+interface TextType {
+    color?: string
+    fontsize?: string
+    fontfamily?: string
+    margintop?: string
+    fontweight?: string
+    textalign?: string
+
+    ///Mobile
+
+    fontsizemob?: string
+    textalignmob?: string
+}
+
 interface ImgType {
     widthmob?: string
     heightmob?: string
@@ -455,9 +469,23 @@ export const Title = styled.h1<TitleType>`
     
     @media only screen and (max-width: 580px) {
         font-size: ${props => props.fontsizemob ? props.fontsizemob : '20px'};
-        text-align: ${props => props.textalignmob ? props.textalignmob : 'center'};
+        text-align: ${props => props.textalignmob ? props.textalignmob : 'center'};        
     }
 `;
+
+export const Text = styled.p<TextType>`
+    font-family: 'Poppins', sans-serif;
+    font-size: ${props => props.fontsize ? props.fontsize : '40px'};
+    font-weight: ${props => props.fontweight ? props.fontweight : '600'};
+    color: ${props => props.color ? props.color : ''};
+    text-align: ${props => props.textalign ? props.textalign : 'center'};
+
+    
+    @media only screen and (max-width: 580px) {
+        font-size: ${props => props.fontsizemob ? props.fontsizemob : '20px'};
+        text-align: ${props => props.textalignmob ? props.textalignmob : 'center'};
+    }
+`
 
 export const Img = styled.img<ImgType>`
     width: 100%;
