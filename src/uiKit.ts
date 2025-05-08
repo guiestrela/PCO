@@ -484,12 +484,13 @@ export const DivContainerText = styled.div<DivContainerTextType>`
 `
 
 export const Title = styled.h1<TitleType>`
+    
     font-family: 'Poppins', sans-serif;
     font-size: ${props => props.fontsize ? props.fontsize : '40px'};
     font-weight: ${props => props.fontweight ? props.fontweight : '600'};
     color: ${props => props.color ? props.color : ''};
     text-align: ${props => props.textalign ? props.textalign : 'center'};
-
+    overflow-wrap: break-word;
     
     @media only screen and (max-width: 580px) {
         font-size: ${props => props.fontsizemob ? props.fontsizemob : '20px'};
