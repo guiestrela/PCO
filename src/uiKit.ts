@@ -235,6 +235,9 @@ interface TitleType {
     fontsizemob?: string
     textalignmob?: string
     paddingbottommob?: string
+    paddingleftmob?: string
+    paddingrightmob?: string
+    paddingtopmob?: string
 }
 
 interface TextType {
@@ -497,7 +500,10 @@ export const Title = styled.h1<TitleType>`
     @media only screen and (max-width: 580px) {
         font-size: ${props => props.fontsizemob ? props.fontsizemob : '20px'};
         text-align: ${props => props.textalignmob ? props.textalignmob : 'center'};  
-        padding-bottom: ${props => props.paddingbottommob ? props.paddingbottommob : ''}      
+        padding-bottom: ${props => props.paddingbottommob ? props.paddingbottommob : ''};
+        padding-left: ${props => props.paddingleftmob ? props.paddingleftmob : ''};
+        padding-right: ${props => props.paddingrightmob ? props.paddingrightmob : ''};
+        padding-top: ${props => props.paddingtopmob ? props.paddingtopmob : ''};
     }
 `;
 
