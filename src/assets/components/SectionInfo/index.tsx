@@ -1,9 +1,11 @@
 import { DivContainerText, DivFlex, Title, Text, DivFlexImage, Img} from "../../../uiKit";
+import { DivFlexPrev } from "./style";
+
 
 import prevVideoImage from "../../images/prevVideo.png"
 import qrcode from "../../images/qr code.svg"
-import { DivFlexPrev } from "./style";
 import mapaDf from "../../images/mapaDf.png"
+import quantidade from "../../images/quantidades.svg"
 
 
 
@@ -78,9 +80,17 @@ function SectionInfo() {
                             As ações do Pão com Ovo ocorrem duas vezes por mês, sempre às sextas-feiras. Cada ação inclui duas rotas cuidadosamente planejadas com antecedência. Uma rota cobre as áreas de Taguatinga e Ceilândia, enquanto a outra se dirige ao Plano Piloto.
                             </Text>                 
                     </DivContainerText >  
-
                 </DivFlex>
+            </DivFlex>
 
+            <DivFlex width="100%" alignitems="center" justifycontent="center">
+                <DivFlex width="1440px" justifycontent="center" alignitems="center" backgroundColor="#FFFFFF" paddingTotal="80px"
+                flexdirectionmob="column" justifycontentmob="center" alignitemsmob="center" paddingTotalmob="30px">
+
+                    <DivFlexImage justifycontent="center"  justifycontentmob="center">
+                            <Img src={quantidade} />
+                    </DivFlexImage>                       
+                </DivFlex>
             </DivFlex>
         </>
     )
