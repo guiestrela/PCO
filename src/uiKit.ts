@@ -228,11 +228,13 @@ interface TitleType {
     margintop?: string
     fontweight?: string
     textalign?: string
+    paddingbottom?: string
 
     ///Mobile
 
     fontsizemob?: string
     textalignmob?: string
+    paddingbottommob?: string
 }
 
 interface TextType {
@@ -494,7 +496,8 @@ export const Title = styled.h1<TitleType>`
     
     @media only screen and (max-width: 580px) {
         font-size: ${props => props.fontsizemob ? props.fontsizemob : '20px'};
-        text-align: ${props => props.textalignmob ? props.textalignmob : 'center'};        
+        text-align: ${props => props.textalignmob ? props.textalignmob : 'center'};  
+        padding-bottom: ${props => props.paddingbottommob ? props.paddingbottommob : ''}      
     }
 `;
 

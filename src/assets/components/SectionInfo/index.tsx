@@ -3,6 +3,8 @@ import { DivContainerText, DivFlex, Title, Text, DivFlexImage, Img} from "../../
 import prevVideoImage from "../../images/prevVideo.png"
 import qrcode from "../../images/qr code.svg"
 import { DivFlexPrev } from "./style";
+import mapaDf from "../../images/mapaDf.png"
+
 
 
 function SectionInfo() {
@@ -54,6 +56,31 @@ function SectionInfo() {
                         </DivContainerText >
                     </DivFlex>
                 </DivFlex>
+            </DivFlex>
+
+            <DivFlex width="100%" alignitems="center" justifycontent="center">
+                <DivFlex width="1440px" justifycontent="start" alignitems="center" backgroundColor="#FFF1D6" paddingTotal="80px"
+                flexdirectionmob="column" justifycontentmob="center" alignitemsmob="center">
+
+                    <DivFlexImage justifycontent="center"  justifycontentmob="center" paddingright="15px" paddingTotalmob="0">
+                            <Img src={mapaDf} />
+                    </DivFlexImage> 
+
+                    <DivContainerText widthTotal="30%" flexdirection="column" alignitems="start" justifycontent="center" widthmob="100%" heightmob="100%" 
+                        justifycontentmob="start" alignitemsmob="center"                        
+                        
+                        >
+                            <Title fontsize="58px" fontweight="700" color="#023D69" textalign="flex-start" fontsizemob="68px" paddingbottom="40px" paddingbottommob="30px"
+                            >
+                            Como funciona a ação?
+                            </Title>
+                            <Text fontsize="28px" fontweight="300" color="#000000" textalign="start" fontsizemob="30px">
+                            As ações do Pão com Ovo ocorrem duas vezes por mês, sempre às sextas-feiras. Cada ação inclui duas rotas cuidadosamente planejadas com antecedência. Uma rota cobre as áreas de Taguatinga e Ceilândia, enquanto a outra se dirige ao Plano Piloto.
+                            </Text>                 
+                    </DivContainerText >  
+
+                </DivFlex>
+
             </DivFlex>
         </>
     )
