@@ -28,8 +28,7 @@ function Banner() {
                         </DivFlexImage>
                     </DivFlex>                    
                 </DivFlex>
-            </DivFlex>  
-                                  
+            </DivFlex>                                    
         </>
     );
 }
