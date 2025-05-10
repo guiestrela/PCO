@@ -4,6 +4,7 @@ import foto01 from "../../images/foto01.png"
 import foto02 from "../../images/foto02.png"
 import foto03 from "../../images/foto03.png"
 import foto04 from "../../images/foto04.png"
+import mapaBrasil from "../../images/acoesBrasil.png"
 
 function SectionEnter() {
     return(
@@ -42,6 +43,18 @@ function SectionEnter() {
                             Seja um voluntário
                         </Button>
                     </ContainerButton>
+                </DivFlex>
+            </DivFlex>
+            <DivFlex width="100%" alignitems="center" justifycontent="center">
+                <DivFlex width="1440px" height="100%" justifycontent="center" alignitems="center" flexdirection="column" backgroundColor="#FFFFFF" paddingTotal="80px" paddingTotalmob="20px">
+                    <DivContainerText justifycontent="center" alignitems="center" flexdirection="column">
+                        <TitleH2 fontsize="68px" fontweight="400" color="#FABD47" fontsizemob="50px">
+                            Locais que já realizamos<br/> ações
+                        </TitleH2>    
+                        <DivFlexImage alignitems="center" justifycontent="center" flexdirection="column" gap="25px">
+                            <Img src={mapaBrasil}/>                            
+                        </DivFlexImage>                                           
+                    </DivContainerText>
                 </DivFlex>
             </DivFlex>
         </>
