@@ -5,7 +5,7 @@ import { DivFlexPrev } from "./style";
 import prevVideoImage from "../../images/prevVideo.png"
 import qrcode from "../../images/qr code.svg"
 import mapaDf from "../../images/mapaDf.png"
-import quantidade from "../../images/quantidades.svg"
+import quantidade from "../../images/quantidades.png"
 
 
 
