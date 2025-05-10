@@ -211,6 +211,10 @@ interface ButtonType {
     margintop?: string
     justifycontent?: string
     alignitems?: string
+    fontweight?: string
+    marginbotton?: string
+    marginleft?: string
+    marginright?: string
     
 
     //mobile
@@ -219,9 +223,29 @@ interface ButtonType {
     heightmob?: string
     justifycontentmob?: string
     alignitemsmob?: string
+    fontsizemob?: string
 }
 
 interface TitleType {
+    color?: string
+    fontsize?: string
+    fontfamily?: string
+    margintop?: string
+    fontweight?: string
+    textalign?: string
+    paddingbottom?: string
+
+    ///Mobile
+
+    fontsizemob?: string
+    textalignmob?: string
+    paddingbottommob?: string
+    paddingleftmob?: string
+    paddingrightmob?: string
+    paddingtopmob?: string
+}
+
+interface TitleH2Type {
     color?: string
     fontsize?: string
     fontfamily?: string
@@ -247,11 +271,14 @@ interface TextType {
     margintop?: string
     fontweight?: string
     textalign?: string
+    paddingtop?: string
+    paddingbottom?: string
 
     ///Mobile
 
     fontsizemob?: string
     textalignmob?: string
+    paddingtopmob?: string
 }
 
 interface ImgType {
@@ -431,7 +458,12 @@ export const Button = styled.button<ButtonType>`
     background-color: ${props => props.backgroundColor ? props.backgroundColor : ""};
     font-family: ${props => props.fontfamily ? props.fontfamily : ""};
     font-size: ${props => props.fontsize ? props.fontsize : ""};
+    font-weight: ${props => props.fontweight ? props.fontweight : ""};
     color: ${props => props.color ? props.color : ""};
+    margin-left: ${props => props.marginleft ? props.marginleft : ""};
+    margin-right: ${props => props.marginright ? props.marginright : ""};
+    margin-bottom: ${props => props.marginbotton ? props.marginbotton : ""};
+
     cursor: pointer;
 
     @media only screen and (max-width: 580px) {
@@ -439,6 +471,8 @@ export const Button = styled.button<ButtonType>`
         height: ${props => props.heightmob ? props.heightmob : ""};
         justify-content: ${props => props.justifycontentmob ? props.justifycontentmob : ""};
         align-items: ${props => props.alignitemsmob ? props.alignitemsmob : ""};
+        font-size: ${props => props.fontsizemob ? props.fontsizemob : ""};
+
     }
 `;
 
@@ -507,17 +541,40 @@ export const Title = styled.h1<TitleType>`
     }
 `;
 
+export const TitleH2 = styled.h2<TitleH2Type>`
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: ${props => props.fontsize ? props.fontsize : '40px'};
+    font-weight: ${props => props.fontweight ? props.fontweight : '600'};
+    color: ${props => props.color ? props.color : ''};
+    text-align: ${props => props.textalign ? props.textalign : 'center'};
+    overflow-wrap: break-word;
+    
+    @media only screen and (max-width: 580px) {
+        font-size: ${props => props.fontsizemob ? props.fontsizemob : '20px'};
+        text-align: ${props => props.textalignmob ? props.textalignmob : 'center'};  
+        padding-bottom: ${props => props.paddingbottommob ? props.paddingbottommob : ''};
+        padding-left: ${props => props.paddingleftmob ? props.paddingleftmob : ''};
+        padding-right: ${props => props.paddingrightmob ? props.paddingrightmob : ''};
+        padding-top: ${props => props.paddingtopmob ? props.paddingtopmob : ''};
+    }
+`;
+
 export const Text = styled.p<TextType>`
     font-family: 'Poppins', sans-serif;
     font-size: ${props => props.fontsize ? props.fontsize : '40px'};
     font-weight: ${props => props.fontweight ? props.fontweight : '600'};
     color: ${props => props.color ? props.color : ''};
     text-align: ${props => props.textalign ? props.textalign : 'center'};
+    padding-top: ${props => props.paddingtop ? props.paddingtop : ''};
+    padding-bottom: ${props => props.paddingbottom ? props.paddingbottom : ''};
 
     
     @media only screen and (max-width: 580px) {
         font-size: ${props => props.fontsizemob ? props.fontsizemob : '20px'};
         text-align: ${props => props.textalignmob ? props.textalignmob : 'center'};
+        padding-top: ${props => props.paddingtopmob ? props.paddingtopmob : ''};
+
     }
 `
 

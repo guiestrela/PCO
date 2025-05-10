@@ -3,6 +3,7 @@ import Banner from "../../components/Banner";
 import SectionButton from "../../components/SectionButton";
 import Footer from "../../components/Footer";
 import SectionInfo from "../../components/SectionInfo";
+import SectionEnter from "../../components/SectionEnter";
 
 function Home() {
     return (
@@ -10,7 +11,8 @@ function Home() {
             <Header />  
             <Banner />
             <SectionButton /> 
-            <SectionInfo />             
+            <SectionInfo />  
+            <SectionEnter/>           
             <Footer />            
         </>
     );
