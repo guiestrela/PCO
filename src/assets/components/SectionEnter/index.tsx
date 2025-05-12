@@ -5,6 +5,9 @@ import foto02 from "../../images/foto02.png"
 import foto03 from "../../images/foto03.png"
 import foto04 from "../../images/foto04.png"
 import mapaBrasil from "../../images/acoesBrasil.png"
+import foto05 from "../../images/foto05.png"
+
+
 
 function SectionEnter() {
     return(
@@ -56,6 +59,38 @@ function SectionEnter() {
                         </DivFlexImage>                                           
                     </DivContainerText>
                 </DivFlex>
+            </DivFlex>
+
+            <DivFlex width="100%" alignitems="center" justifycontent="center">
+                <DivFlex width="1440px" justifycontent="center" alignitems="center"  backgroundColor="#FFFFFF"  paddingTotalmob="20px" flexdirectionmob="column">
+                        <DivFlex justifycontent="center" alignitems="center" backgroundColor="#FFF1D6"
+                        flexdirectionmob="column">
+                            <DivContainerText justifycontent="start" alignitems="start" flexdirection="column" paddingTotal="20px" flexdirectionmob="column"
+                            justifycontentmob="center" alignitemsmob="center"
+                            >
+                                <TitleH2 fontsize="68px" fontweight="400" color="#023D69" fontsizemob="70px" textalign="start" textalignmob="center">
+                                O Exemplo<br/> Arrasta
+                                </TitleH2>
+                                <Text fontsize="28px" fontweight="400" color="#023D69" textalign="start" paddingtop="20px" paddingbottom="30px"
+                                fontsizemob="30px">
+                                Participou de alguma ação conosco?<br/> 
+                                Compartilhe com a #PaocomOvoDF<br/> e marque o nosso Instagram<br/> @paocomovodf
+                                </Text>
+                            <ContainerButton alignitems="center" justifycontent="center" flexdirection="column" paddingtop="50px">
+                                <Button width="100%" height="66px" alignitems="center" justifycontent="center" borderradius="12px" border="2px solid #FFDF78" backgroundColor="#FFDF78" marginbotton="40px" fontsize="30px" fontweight="400" color="#0C3077" 
+                                fontsizemob="30px" padding="0 20px" onClick={function (): void {
+                                throw new Error("Function not implemented.");
+                                } }>
+                                Siga nosso Instagram! 
+                                </Button>                        
+                            </ContainerButton>                        
+                        </DivContainerText>
+                        <DivFlexImage  alignitems="center" justifycontent="center">
+                            <Img src={foto05}/>                            
+                        </DivFlexImage>                             
+                    </DivFlex>                                            
+                </DivFlex>
+
             </DivFlex>
         </>
     )
