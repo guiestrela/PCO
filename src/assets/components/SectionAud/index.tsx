@@ -3,6 +3,11 @@ import { Button, ContainerButton, DivContainerText, DivFlex, Title, Text, TitleH
 import comoAjudar from "../../images/comoAjudar.png"
 import fotoElipise from "../../images/fotoEllipse.png"
 import facaParte from "../../images/facaParte.png"
+import whatsApp from "../../images/whatsapps.png"
+import whatsIcon from "../../icons/whatsaapIconButton.svg"
+
+
+
 
 
 
@@ -100,7 +105,7 @@ function SectionAud() {
             </DivFlex>
 
             <DivFlex width="100%" alignitems="center" justifycontent="center">
-                <DivFlex width="1440px" height="100%" justifycontent="center" alignitems="center" backgroundColor="#FFDF66" paddingTotal="80px 0 80px 0" paddingTotalmob="20px" flexdirectionmob="column">
+                <DivFlex width="1440px" height="100%" justifycontent="center" alignitems="center" backgroundColor="#FFDF66" paddingTotal="80px 0 0 0" paddingTotalmob="20px" flexdirectionmob="column">
                     <DivFlex flexdirection="column" justifycontent="start" alignitems="start" alignitemsmob="center">
                         <DivContainerText justifycontent="start" alignitems="start" flexdirection="column" paddingright="80px">
                             <TitleH2 fontsize="88px" fontweight="700" color="#0C3077" fontsizemob="75px" textalign="start"
@@ -121,13 +126,39 @@ function SectionAud() {
                             </Button>                        
                         </ContainerButton>
                     </DivFlex>
-                    <DivFlex>
-                        <DivFlexImage>
+                    <DivFlex flexdirection="column" alignitems="end" justifycontent="start" paddingbottom="250px" paddingbottommob="20px">
+                        <DivFlexImage widthTotal="90%" >
                             <Img src={facaParte}/>                            
                         </DivFlexImage>
                     </DivFlex>                    
+                </DivFlex>                
+            </DivFlex>
+
+            <DivFlex width="100%" alignitems="center" justifycontent="center">
+                <DivFlex width="1440px" height="100%" justifycontent="center" alignitems="center" backgroundColor="#FFFFFF" paddingTotal="80px 0 80px 0" paddingTotalmob="20px" flexdirectionmob="column">                    
+                    <DivFlex>
+                        <DivFlexImage alignitems="center" justifycontent="center" gap="25px" paddingright="20px" paddingbottommob="40px">
+                            <Img src={whatsApp}/>                            
+                        </DivFlexImage>
+                    </DivFlex>   
+                    <DivFlex flexdirection="column" justifycontent="start" alignitems="start" alignitemsmob="center" paddingleft="60px" justifycontentmob="center" paddingTotal="20px">
+                        <DivContainerText justifycontent="start" alignitems="start" flexdirection="column">
+                            <TitleH2 fontsize="88px" fontweight="400" color="#0C3077" fontsizemob="45px" textalign="start"
+                            paddingbottommob="20px">
+                                Mantenha-se<br/>
+                                atualizado!
+                            </TitleH2>                                                                                       
+                        </DivContainerText>
+                        <ContainerButton alignitems="start" justifycontent="start" paddingtop="50px" alignitemsmob="center" justifycontentmob="center">
+                            <Button width="100%" height="104px" alignitems="center" justifycontent="end" borderradius="12px" textalign="start" border="2px solid #023D69" backgroundColor="#023D69" marginbotton="40px" fontsize="28px" fontweight="400" color="#FFFFFF" gap="40px"
+                            fontsizemob="15px" padding="0 20px" onClick={function (): void {
+                            throw new Error("Function not implemented.");
+                            } }>
+                            <img src={whatsIcon} alt="whatsappp" />Faça parte do grupo<br/> de Whatsapp! 
+                            </Button>                        
+                        </ContainerButton>
+                    </DivFlex>                 
                 </DivFlex>
-                
             </DivFlex>
         </>
     )

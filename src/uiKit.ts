@@ -215,7 +215,10 @@ interface ButtonType {
     marginbotton?: string
     marginleft?: string
     marginright?: string
-    
+    gap?: string
+    textalign?: string
+
+    //
 
     //mobile
 
@@ -463,8 +466,10 @@ export const Button = styled.button<ButtonType>`
     margin-left: ${props => props.marginleft ? props.marginleft : ""};
     margin-right: ${props => props.marginright ? props.marginright : ""};
     margin-bottom: ${props => props.marginbotton ? props.marginbotton : ""};
+    gap: ${props => props.gap ? props.gap : ""};
 
     cursor: pointer;
+    text-align: ${props => props.textalign ? props.textalign : ""};
 
     @media only screen and (max-width: 580px) {
         width: ${props => props.widthmob ? props.widthmob : ""};        
