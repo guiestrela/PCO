@@ -1,6 +1,8 @@
 import { Button, ContainerButton, DivContainerText, DivFlex, Title, Text, TitleH2, DivFlexImage, Img } from "../../../uiKit";
 
 import comoAjudar from "../../images/comoAjudar.png"
+import fotoElipise from "../../images/fotoEllipse.png"
+
 
 function SectionAud() {
     return(
@@ -58,6 +60,43 @@ function SectionAud() {
                     </DivFlex>                    
                 </DivFlex>
             </DivFlex>
+            <DivFlex width="100%" alignitems="center" justifycontent="center">
+                <DivFlex width="1440px" height="100%" justifycontent="center" alignitems="center" backgroundColor="#FFFFFF" paddingTotal="80px 0 80px 0" paddingTotalmob="20px" flexdirectionmob="column">                    
+                    <DivFlex>
+                        <DivFlexImage alignitems="center" justifycontent="center" flexdirection="column" gap="25px" paddingright="20px" paddingbottommob="40px">
+                            <Img src={fotoElipise}/>                            
+                        </DivFlexImage>
+                    </DivFlex>   
+                    <DivFlex flexdirection="column" justifycontent="start" alignitems="start" alignitemsmob="center">
+                        <DivContainerText justifycontent="start" alignitems="start" flexdirection="column">
+                            <TitleH2 fontsize="68px" fontweight="400" color="#0C3077" fontsizemob="45px" textalign="start"
+                            paddingbottommob="20px">
+                                O Projeto Pão com Ovo<br/> 
+                                teve um crescimento de<br/> 
+                                567% ao longo dos anos
+                            </TitleH2> 
+                            <Text fontsize="28px" fontweight="400" color="#0C3077" fontsizemob="28px" textalign="start">
+                                Queremos continuar crescendo e impactando ainda<br/> 
+                                mais vidas, mas para isso precisamos da ajuda de<br/>
+                                doadores e voluntários. Sua contribuição é<br/>
+                                fundamental para que possamos expandir nossos<br/> 
+                                serviços e alcançar mais pessoas necessitadas. Junte<br/>
+                                -se a nós e faça parte dessa transformação!
+                            </Text>                                                               
+                        </DivContainerText>
+                        <ContainerButton alignitems="start" justifycontent="center" paddingtop="50px" alignitemsmob="center">
+                            <Button width="100%" height="66px" alignitems="center" justifycontent="center" borderradius="12px" border="2px solid #FFDF78" backgroundColor="#FFDF78" marginbotton="40px" fontsize="28px" fontweight="400" color="#021639" 
+                            fontsizemob="22px" padding="0 20px" onClick={function (): void {
+                            throw new Error("Function not implemented.");
+                            } }>
+                            Acompanhe a evolução do projeto 
+                            </Button>                        
+                        </ContainerButton>
+                    </DivFlex>                 
+                </DivFlex>
+            </DivFlex>
+
+            
         </>
     )
 }
