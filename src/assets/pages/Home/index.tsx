@@ -4,6 +4,7 @@ import SectionButton from "../../components/SectionButton";
 import Footer from "../../components/Footer";
 import SectionInfo from "../../components/SectionInfo";
 import SectionEnter from "../../components/SectionEnter";
+import SectionAud from "../../components/SectionAud";
 
 function Home() {
     return (
@@ -12,7 +13,8 @@ function Home() {
             <Banner />
             <SectionButton /> 
             <SectionInfo />  
-            <SectionEnter/>           
+            <SectionEnter/>  
+            <SectionAud />         
             <Footer />            
         </>
     );
