@@ -12,9 +12,9 @@ function Footer() {
         <>
             <DivFlex width="100%" alignitems="center" justifycontent="center">
                 
-                <DivFlex width="1440px" height="100%" backgroundColor="#023D69" justifycontent="space-between" alignitems="center" paddingTotal="0 80px" flexdirectionmob="column">
+                <DivFlex width="1440px" height="100%" backgroundColor="#023D69" justifycontent="space-between" alignitems="center" paddingTotal="0 80px" flexdirectionmob="column" paddingTotalmob="0 40px">
 
-                    <DivFlex flexdirection="column" alignitems="start" justifycontent="center" paddingTotal="80px 0">
+                    <DivFlex flexdirection="column" alignitems="start" justifycontent="center" paddingTotal="80px 0" paddingTotalmob="80px 20px">
 
                         <DivFlexLogo justifycontent="start" alignitems="center">
                             <Img src={logo}/>
