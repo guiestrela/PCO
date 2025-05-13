@@ -282,6 +282,10 @@ interface TextType {
     fontsizemob?: string
     textalignmob?: string
     paddingtopmob?: string
+    paddingleftmob?: string
+    paddingrightmob?: string
+    paddingbottommob?: string
+
 }
 
 interface ImgType {
@@ -579,6 +583,11 @@ export const Text = styled.p<TextType>`
         font-size: ${props => props.fontsizemob ? props.fontsizemob : '20px'};
         text-align: ${props => props.textalignmob ? props.textalignmob : 'center'};
         padding-top: ${props => props.paddingtopmob ? props.paddingtopmob : ''};
+        padding-left: ${props => props.paddingleftmob ? props.paddingleftmob : ''};
+        padding-right: ${props => props.paddingrightmob ? props.paddingrightmob : ''};
+        padding-bottom: ${props => props.paddingbottommob ? props.paddingbottommob : ''};
+
+
 
     }
 `

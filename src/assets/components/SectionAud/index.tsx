@@ -17,7 +17,8 @@ function SectionAud() {
             <DivFlex width="100%" alignitems="center" justifycontent="center">
                 <DivFlex width="1440px" height="100%" justifycontent="center" alignitems="center" flexdirection="column" backgroundColor="#023D69" paddingTotal="80px" paddingTotalmob="20px">
                     <DivContainerText justifycontent="center" alignitems="center" flexdirection="column">
-                        <Title fontsize="72px" fontweight="700" color="#FFFFFF" fontsizemob="50px">
+                        <Title fontsize="72px" fontweight="700" color="#FFFFFF" fontsizemob="50px"
+                        paddingleftmob="20px" paddingrightmob="20px">
                             O grupo pão com ovo<br/> 
                             preza pela transparência<br/> 
                             e honestidade
@@ -39,10 +40,12 @@ function SectionAud() {
                     <DivFlex flexdirection="column" justifycontent="start" alignitems="start" alignitemsmob="center">
                         <DivContainerText justifycontent="start" alignitems="start" flexdirection="column">
                             <TitleH2 fontsize="72px" fontweight="700" color="#0C3077" fontsizemob="60px" textalign="start"
-                            paddingbottommob="20px">
+                            paddingbottommob="20px"
+                            paddingleftmob="20px" paddingrightmob="20px">
                                 Como ajudar?
                             </TitleH2> 
-                            <Text fontsize="28px" fontweight="400" color="#0C3077" fontsizemob="28px" textalign="start">
+                            <Text fontsize="28px" fontweight="400" color="#0C3077" fontsizemob="28px" textalign="start"
+                            paddingleftmob="20px" paddingrightmob="20px">
                                 A nossa missão depende da generosidade e do<br/>
                                 apoio da comunidade. Existem várias maneiras<br/> 
                                 pelas quais você pode fazer a diferença e nos<br/> 
@@ -78,12 +81,14 @@ function SectionAud() {
                     <DivFlex flexdirection="column" justifycontent="start" alignitems="start" alignitemsmob="center">
                         <DivContainerText justifycontent="start" alignitems="start" flexdirection="column">
                             <TitleH2 fontsize="68px" fontweight="400" color="#0C3077" fontsizemob="45px" textalign="start"
-                            paddingbottommob="20px">
+                            paddingbottommob="20px"
+                            paddingleftmob="20px" paddingrightmob="20px">
                                 O Projeto Pão com Ovo<br/> 
                                 teve um crescimento de<br/> 
                                 567% ao longo dos anos
                             </TitleH2> 
-                            <Text fontsize="28px" fontweight="400" color="#0C3077" fontsizemob="28px" textalign="start">
+                            <Text fontsize="28px" fontweight="400" color="#0C3077" fontsizemob="28px" textalign="start"
+                            paddingleftmob="20px" paddingrightmob="20px">
                                 Queremos continuar crescendo e impactando ainda<br/> 
                                 mais vidas, mas para isso precisamos da ajuda de<br/>
                                 doadores e voluntários. Sua contribuição é<br/>
@@ -108,8 +113,8 @@ function SectionAud() {
                 <DivFlex width="1440px" height="100%" justifycontent="center" alignitems="center" backgroundColor="#FFDF66" paddingTotal="80px 0 0 0" paddingTotalmob="20px" flexdirectionmob="column">
                     <DivFlex flexdirection="column" justifycontent="start" alignitems="start" alignitemsmob="center">
                         <DivContainerText justifycontent="start" alignitems="start" flexdirection="column" paddingright="80px">
-                            <TitleH2 fontsize="88px" fontweight="700" color="#0C3077" fontsizemob="75px" textalign="start"
-                            paddingbottommob="20px" >
+                            <TitleH2 fontsize="88px" fontweight="700" color="#0C3077" fontsizemob="70px" textalign="start"
+                            paddingbottommob="42px" paddingleftmob="20px" paddingrightmob="20px" textalignmob="center">
                                 Faça parte do<br/> 
                                 projeto e<br/> 
                                 transforme a vida<br/> 
@@ -144,7 +149,8 @@ function SectionAud() {
                     <DivFlex flexdirection="column" justifycontent="start" alignitems="start" alignitemsmob="center" paddingleft="60px" justifycontentmob="center" paddingTotal="20px">
                         <DivContainerText justifycontent="start" alignitems="start" flexdirection="column">
                             <TitleH2 fontsize="88px" fontweight="400" color="#0C3077" fontsizemob="45px" textalign="start"
-                            paddingbottommob="20px">
+                            paddingbottommob="20px"
+                            paddingleftmob="20px" paddingrightmob="20px">
                                 Mantenha-se<br/>
                                 atualizado!
                             </TitleH2>                                                                                       
