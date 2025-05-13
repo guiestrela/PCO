@@ -51,7 +51,7 @@ function SectionInfo() {
                         justifycontentmob="start" alignitemsmob="center"                        
                         
                         >
-                            <Title fontsize="58px" fontweight="700" color="#023D69" textalign="flex-start" fontsizemob="60px"
+                            <Title fontsize="58px" fontweight="700" color="#023D69" textalign="flex-start" fontsizemob="50px"
                             paddingleftmob="20px" paddingrightmob="20px">
                             Distribua 
                             solidariedade

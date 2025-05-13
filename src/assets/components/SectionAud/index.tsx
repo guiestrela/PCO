@@ -113,7 +113,7 @@ function SectionAud() {
                 <DivFlex width="1440px" height="100%" justifycontent="center" alignitems="center" backgroundColor="#FFDF66" paddingTotal="80px 0 0 0" paddingTotalmob="20px" flexdirectionmob="column">
                     <DivFlex flexdirection="column" justifycontent="start" alignitems="start" alignitemsmob="center">
                         <DivContainerText justifycontent="start" alignitems="start" flexdirection="column" paddingright="80px">
-                            <TitleH2 fontsize="88px" fontweight="700" color="#0C3077" fontsizemob="70px" textalign="start"
+                            <TitleH2 fontsize="88px" fontweight="700" color="#0C3077" fontsizemob="57px" textalign="start" 
                             paddingbottommob="42px" paddingleftmob="20px" paddingrightmob="20px" textalignmob="center">
                                 Faça parte do<br/> 
                                 projeto e<br/> 
