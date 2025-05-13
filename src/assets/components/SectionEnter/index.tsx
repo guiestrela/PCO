@@ -15,11 +15,13 @@ function SectionEnter() {
             <DivFlex width="100%" alignitems="center" justifycontent="center">
                 <DivFlex width="1440px" height="100%" justifycontent="center" alignitems="center" flexdirection="column" backgroundColor="#023D69" paddingTotal="80px" paddingTotalmob="20px">
                     <DivContainerText justifycontent="center" alignitems="center" flexdirection="column">
-                        <TitleH2 fontsize="68px" fontweight="400" color="#FFFFFF" fontsizemob="50px">
+                        <TitleH2 fontsize="68px" fontweight="400" color="#FFFFFF" fontsizemob="50px"
+                        paddingleftmob="20px" paddingrightmob="20px">
                             Você faz a diferença!
                         </TitleH2>
                         <Text fontsize="50px" fontweight="500" color="#FFFFFF" textalign="center" paddingtop="20px" paddingbottom="30px"
-                        fontsizemob="30px">
+                        fontsizemob="30px"
+                        paddingleftmob="20px" paddingrightmob="20px">
                             Veja como sua doação é convertida<br/> em <strong>solidariedade</strong>
                         </Text>                        
                     </DivContainerText>
@@ -51,7 +53,8 @@ function SectionEnter() {
             <DivFlex width="100%" alignitems="center" justifycontent="center">
                 <DivFlex width="1440px" height="100%" justifycontent="center" alignitems="center" flexdirection="column" backgroundColor="#FFFFFF" paddingTotal="80px" paddingTotalmob="20px">
                     <DivContainerText justifycontent="center" alignitems="center" flexdirection="column">
-                        <TitleH2 fontsize="68px" fontweight="400" color="#FABD47" fontsizemob="50px">
+                        <TitleH2 fontsize="68px" fontweight="400" color="#FABD47" fontsizemob="50px"
+                        paddingleftmob="20px" paddingrightmob="20px">
                             Locais que já realizamos<br/> ações
                         </TitleH2>    
                         <DivFlexImage alignitems="center" justifycontent="center" flexdirection="column" gap="25px">
@@ -68,10 +71,12 @@ function SectionEnter() {
                             <DivContainerText justifycontent="start" alignitems="start" flexdirection="column" paddingTotal="20px" flexdirectionmob="column"
                             justifycontentmob="center" alignitemsmob="center"
                             >
-                                <TitleH2 fontsize="68px" fontweight="400" color="#023D69" fontsizemob="70px" textalign="start" textalignmob="center">
+                                <TitleH2 fontsize="68px" fontweight="400" color="#023D69" fontsizemob="70px" textalign="start" textalignmob="center"
+                                paddingleftmob="20px" paddingrightmob="20px">
                                 O Exemplo<br/> Arrasta
                                 </TitleH2>
                                 <Text fontsize="28px" fontweight="400" color="#023D69" textalign="start" paddingtop="20px" paddingbottom="30px"
+                                paddingleftmob="20px" paddingrightmob="20px"
                                 fontsizemob="30px">
                                 Participou de alguma ação conosco?<br/> 
                                 Compartilhe com a #PaocomOvoDF<br/> e marque o nosso Instagram<br/> @paocomovodf

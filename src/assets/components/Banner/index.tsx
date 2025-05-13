@@ -10,7 +10,8 @@ function Banner() {
                 <DivFlex width="1440px" height="100%" backgroundimage="linear-gradient(to right,  #023D69, #0055A5 30%,  #F5C766 80%); " justifycontent="center" alignitems="center" flexdirectionmob="column" heightmob="100%">
                     <DivFlex flexdirection="column" paddingleft="80px" paddingleftmob="0px" justifycontentmob="center" alignitemsmob="center">
                     <DivContainerText paddingtopmob="20px" justifycontentmob="center" alignitemsmob="center">
-                        <Title color="#FFFFFF" fontsize="68px" fontweight="700" fontsizemob="50px" textalign="start">
+                        <Title color="#FFFFFF" fontsize="68px" fontweight="700" fontsizemob="50px" textalign="start"
+                        paddingleftmob="20px" paddingrightmob="20px">
                         No fluxo da vida,<br/> 
                         toda hora você<br/> 
                         recebe e doa

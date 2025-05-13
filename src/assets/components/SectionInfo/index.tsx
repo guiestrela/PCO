@@ -18,10 +18,11 @@ function SectionInfo() {
                 >
                     
                     <DivContainerText flexdirection="column" paddingleft="80px" paddingleftmob="0px">
-                        <Title fontsize="68px" fontweight="400" color="#023D69" textalign="start" fontsizemob="58px" paddingbottommob="30px">
+                        <Title fontsize="68px" fontweight="400" color="#023D69" textalign="start" fontsizemob="58px" paddingbottommob="30px"
+                        paddingleftmob="20px" paddingrightmob="20px">
                         Conheça o Grupo<br/> Pão com Ovo
                         </Title>
-                        <Text fontsize="28px" fontweight="300" color="#000000" textalign="start" fontsizemob="25px" 
+                        <Text fontsize="28px" fontweight="300" color="#000000" textalign="start" fontsizemob="25px"paddingleftmob="20px" paddingrightmob="20px"
                         >
                         O Pão com Ovo é um projeto social<br/> destinado a levar alento à pessoas<br/> em situação de rua, no Distrito <br/>Federal. Nasceu da vontade de  uma<br/> família manauara em fazer algo por<br/>  essas pessoas, muitas vezes invisíveis 
                         </Text>                 
@@ -50,11 +51,13 @@ function SectionInfo() {
                         justifycontentmob="start" alignitemsmob="center"                        
                         
                         >
-                            <Title fontsize="58px" fontweight="700" color="#023D69" textalign="flex-start" fontsizemob="60px">
+                            <Title fontsize="58px" fontweight="700" color="#023D69" textalign="flex-start" fontsizemob="60px"
+                            paddingleftmob="20px" paddingrightmob="20px">
                             Distribua 
                             solidariedade
                             </Title>
-                            <Text fontsize="24px" fontweight="700" color="#023D69" textalign="start" fontsizemob="30px">
+                            <Text fontsize="24px" fontweight="700" color="#023D69" textalign="start" fontsizemob="30px"
+                            paddingleftmob="20px" paddingrightmob="20px">
                             Contribua com qualquer valor
                             </Text>                 
                         </DivContainerText >
@@ -75,10 +78,12 @@ function SectionInfo() {
                         
                         >
                             <Title fontsize="58px" fontweight="700" color="#023D69" textalign="flex-start" fontsizemob="68px" paddingbottom="40px" paddingbottommob="30px"
+                            paddingleftmob="20px" paddingrightmob="20px"
                             >
                             Como funciona a ação?
                             </Title>
-                            <Text fontsize="28px" fontweight="300" color="#000000" textalign="start" fontsizemob="30px">
+                            <Text fontsize="28px" fontweight="300" color="#000000" textalign="start" fontsizemob="30px"
+                            paddingleftmob="20px" paddingrightmob="20px">
                             As ações do Pão com Ovo ocorrem duas vezes por mês, sempre às sextas-feiras. Cada ação inclui duas rotas cuidadosamente planejadas com antecedência. Uma rota cobre as áreas de Taguatinga e Ceilândia, enquanto a outra se dirige ao Plano Piloto.
                             </Text>                 
                     </DivContainerText >  
