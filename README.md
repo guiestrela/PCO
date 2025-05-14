@@ -48,7 +48,7 @@ Se você deseja executar este projeto localmente para avaliar o código e a impl
 
 ## 👨‍💻 Sobre Mim
 
-Eu sou o Guilherme, eu fou recem formado em Desenvolvomento Web pela Univercidade Anhaguera, estou em transiçao de carreira para area de programçao e para isso eu escolhi React + TypeScript.
+Meu nome é Guilherme e sou recém-formado em Desenvolvimento Web pela Universidade Anhanguera. Em minha transição de carreira para a área de programação, decidi especializar-me em React e TypeScript.
 ## Linkdin: https://www.linkedin.com/in/guilherme-estrela-4166a539/
 
 ---
