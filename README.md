@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+# Demonstração de Habilidades em Desenvolvimento Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Status do Projeto](https://img.shields.io/badge/status-concluído-brightgreen)](https://github.com/seu-usuario/seu-repositorio)
+[![Linguagem](https://img.shields.io/badge/linguagem-TypeScript-blueviolet)](https://www.typescriptlang.org/)
+[![Framework](https://img.shields.io/badge/framework-React-blue)](https://react.dev/)
+[![Styling](https://img.shields.io/badge/styling-Styled--Components-pink)](https://styled-components.com/)
+[![Build Tool](https://img.shields.io/badge/build-Vite-teal)](https://vitejs.dev/)
+[![Deploy](https://img.shields.io/badge/deploy-Vercel-informational)](https://pco-seven.vercel.app/)
 
-Currently, two official plugins are available:
+> Este projeto é uma demonstração das minhas habilidades em desenvolvimento frontend, construído utilizando React, TypeScript e Styled Components, com Vite como ferramenta de build. O site apresentado é uma adaptação/reimplementação do site da ONG Pão com Ovo (PCO), disponível em [https://pco-seven.vercel.app/](https://pco-seven.vercel.app/), com foco em replicar a estrutura e o design utilizando as tecnologias mencionadas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Demonstração Online
 
-## Expanding the ESLint configuration
+Você pode visualizar a demonstração deste projeto online em: [https://pco-seven.vercel.app/](https://pco-seven.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Tecnologias Utilizadas e Demonstração de Conhecimentos
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Este projeto foi desenvolvido com as seguintes tecnologias, demonstrando meu conhecimento em:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+* **React:** Utilização de componentes funcionais, gerenciamento de estado (com Hooks), roteamento (se aplicável) e a arquitetura de componentes do React para construir uma interface de usuário interativa e reativa.
+* **TypeScript:** Aplicação de tipagem estática para garantir a segurança do código, melhorar a manutenibilidade e demonstrar familiaridade com os conceitos avançados do TypeScript, como interfaces, tipos genéricos e enums.
+* **Styled Components:** Implementação de estilização diretamente nos componentes React, demonstrando a capacidade de criar estilos encapsulados, reutilizáveis e com boa organização, aproveitando as vantagens do CSS-in-JS.
+* **Vite:** Utilização de uma ferramenta de build moderna e rápida para o desenvolvimento e otimização do projeto, mostrando familiaridade com workflows de desenvolvimento frontend atuais.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 💻 Executando o Projeto Localmente (Para Avaliação)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Se você deseja executar este projeto localmente para avaliar o código e a implementação:
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    cd seu-repositorio
+    ```
+2.  **Instale as dependências:**
+    ```bash
+    npm install # ou yarn install ou pnpm install
+    ```
+3.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev # ou yarn dev ou pnpm dev
+    ```
+    O projeto estará disponível em `http://localhost:5173` (a porta pode variar).
+
+## 📄 Observações
+
+* Este projeto foi criado com o objetivo principal de demonstrar minhas habilidades técnicas em um cenário prático.
+* O design: https://www.figma.com/design/mpkspNNfnVwruwqGzAm3UW/P%C3%A3o-Com-Ovo?node-id=0-1&p=f&t=1SBUUm1hv5dxopbK-0
+
+## 👨‍💻 Sobre Mim
+
+Eu sou o Guilherme, eu fou recem formado em Desenvolvomento Web pela Univercidade Anhaguera, estou em transiçao de carreira para area de programçao e para isso eu escolhi React + TypeScript.
+## Linkdin: https://www.linkedin.com/in/guilherme-estrela-4166a539/
+
+---
+
+Este é um projeto de demonstração de habilidades em desenvolvimento frontend.
