@@ -28,7 +28,7 @@ Se você deseja executar este projeto localmente para avaliar o código e a impl
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    git clone https://github.com/guiestrela/PCO.git (https://github.com/guiestrela/PCO.git)
     cd seu-repositorio
     ```
 2.  **Instale as dependências:**
