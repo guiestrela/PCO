@@ -1,6 +1,6 @@
 # Demonstração de Habilidades em Desenvolvimento Frontend
 
-[![Status do Projeto](https://img.shields.io/badge/status-concluído-brightgreen)](https://github.com/seu-usuario/seu-repositorio)
+[![Status do Projeto](https://img.shields.io/badge/status-concluído-brightgreen)](https://github.com/guiestrela/PCO)
 [![Linguagem](https://img.shields.io/badge/linguagem-TypeScript-blueviolet)](https://www.typescriptlang.org/)
 [![Framework](https://img.shields.io/badge/framework-React-blue)](https://react.dev/)
 [![Styling](https://img.shields.io/badge/styling-Styled--Components-pink)](https://styled-components.com/)
