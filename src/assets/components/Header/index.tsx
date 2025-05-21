@@ -1,4 +1,8 @@
-import { DivFlex, DivFlexLogo, Img } from "../../../uiKit";
+import { 
+    DivFlex, 
+    DivFlexLogo, 
+    Img } 
+    from "../../../uiKit";
 
 import logo from "../../icons/logoHeader.svg";
 import instagram from "../../icons/instagramHeader.svg";
