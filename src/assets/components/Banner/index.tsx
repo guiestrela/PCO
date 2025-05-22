@@ -1,4 +1,12 @@
-import { Button, ContainerButton, DivContainerText, DivFlex, DivFlexImage, Img, Title } from "../../../uiKit";
+import { 
+    Button, 
+    ContainerButton, 
+    DivContainerText, 
+    DivFlex, 
+    DivFlexImage, 
+    Img, 
+    Title } 
+    from "../../../uiKit";
 
 import imageBanner from "../../images/fotoBanner01.png";
 

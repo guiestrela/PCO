@@ -8,7 +8,7 @@ import {
     TitleH2, 
     DivFlexImage, 
     Img } 
-from "../../../uiKit";
+    from "../../../uiKit";
 
 import comoAjudar from "../../images/comoAjudar.png"
 import fotoElipise from "../../images/fotoEllipse.png"
