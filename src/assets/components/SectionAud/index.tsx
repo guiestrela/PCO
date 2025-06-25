@@ -168,8 +168,7 @@ function SectionAud() {
             <DivFlex 
                 width="100%" 
                 alignitems="center" 
-                justifycontent="center"
-                backgroundimage="linear-gradient(to right,  #023D69, #0055A5 30%,  #F5C766 80%); "
+                justifycontent="center"                
             >
                 <DivFlex 
                     width="1440px" 
