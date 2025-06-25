@@ -17,8 +17,7 @@ function Banner() {
                 width="100%" 
                 alignitems="center" 
                 justifycontent="center"
-                height="100%"
-                backgroundimage="linear-gradient(to right,  #023D69, #0055A5 30%,  #F5C766 80%); "
+                height="100%"               
             >
                 <DivFlex 
                     width="1440px" 

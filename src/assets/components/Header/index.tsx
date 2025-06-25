@@ -19,7 +19,7 @@ function header() {
             height="200px" 
             alignitems="center" 
             justifycontent="center"
-            backgroundimage="linear-gradient(to right,  #023D69, #0055A5 30%,  #F5C766 80%); "
+            
         >
             <DivFlex 
                 width="1440px" 
